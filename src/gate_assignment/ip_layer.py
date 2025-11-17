@@ -1,101 +1,120 @@
-"""Interior-point LP layer for gate assignment.
-
-该模块借鉴 reference/code/NSP/ip_model_whole.py 的 IPOfunc 思路，
-但先实现一个精简版：forward 通过 SciPy 的 interior-point LP 求解器得到松弛解，
-backward 暂返回零梯度，后续将按照论文补充 KKT 求导。
-"""
+"""Torch autograd wrapper around an LP solver."""
 
 from __future__ import annotations
 
-from typing import Any, Dict, Optional, Sequence, Tuple
+from dataclasses import dataclass
+from typing import Optional, Tuple
 
 import numpy as np
 import torch
-from scipy import sparse
 from scipy.optimize import linprog
 from torch.autograd import Function
 
-Tensor = torch.Tensor
+
+@dataclass
+class IPParams:
+    """Placeholder for future interior-point hyperparameters."""
+
+    max_iter: int = 50
+    tol: float = 1e-8
 
 
-def _to_numpy(tensor: Optional[Tensor]) -> Optional[np.ndarray]:
-    if tensor is None:
-        return None
-    return tensor.detach().cpu().numpy()
+def _tensor_or_empty(t: Optional[torch.Tensor], n_cols: int, like: torch.Tensor) -> torch.Tensor:
+    if t is None:
+        return torch.zeros((0, n_cols), dtype=like.dtype, device=like.device)
+    return t
 
 
-def _bounds_from_arrays(lower: np.ndarray, upper: np.ndarray) -> Sequence[Tuple[float, float]]:
-    if lower.shape != upper.shape:
-        raise ValueError("lower/upper bounds shape mismatch")
-    return list(zip(lower.tolist(), upper.tolist()))
+def _vector_or_empty(t: Optional[torch.Tensor], like: torch.Tensor) -> torch.Tensor:
+    if t is None:
+        return torch.zeros(0, dtype=like.dtype, device=like.device)
+    return t
+
+
+def solve_lp_highs_debug(
+    c: torch.Tensor,
+    A_eq: torch.Tensor,
+    b_eq: torch.Tensor,
+    G: torch.Tensor,
+    h: torch.Tensor,
+    lb: torch.Tensor,
+    ub: torch.Tensor,
+) -> np.ndarray:
+    """Solve LP with SciPy HiGHS for forward reference."""
+
+    bound_list = list(zip(lb.detach().cpu().numpy(), ub.detach().cpu().numpy()))
+    res = linprog(
+        c.detach().cpu().numpy(),
+        A_eq=A_eq.detach().cpu().numpy() if A_eq.numel() else None,
+        b_eq=b_eq.detach().cpu().numpy() if b_eq.numel() else None,
+        A_ub=G.detach().cpu().numpy() if G.numel() else None,
+        b_ub=h.detach().cpu().numpy() if h.numel() else None,
+        bounds=bound_list,
+        method="highs",
+    )
+    if not res.success:
+        raise RuntimeError(f"HiGHS failed: {res.message}")
+    return res.x
 
 
 class GateIPFunction(Function):
-    """Torch autograd Function wrapping an LP interior-point solve."""
+    """Temporary autograd stub: forward via HiGHS, backward returns zero grad."""
 
     @staticmethod
     def forward(  # type: ignore[override]
         ctx,
-        c: Tensor,
-        b_eq: Tensor,
-        h_ub: Tensor,
-        A_eq: Optional[sparse.csr_matrix],
-        G_ub: Optional[sparse.csr_matrix],
-        bounds: Tuple[np.ndarray, np.ndarray],
-        solver_options: Optional[Dict[str, Any]] = None,
-    ) -> Tensor:
-        method = "highs"
-        options: Dict[str, Any] = {}
-        if solver_options:
-            method = solver_options.get("method", method)
-            options.update(solver_options.get("options", {}))
-
-        c_np = _to_numpy(c).astype(float)
-        b_eq_np = _to_numpy(b_eq).astype(float)
-        h_ub_np = _to_numpy(h_ub).astype(float)
-        bounds_seq = _bounds_from_arrays(bounds[0], bounds[1])
-
-        res = linprog(
-            c_np,
-            A_ub=G_ub,
-            b_ub=h_ub_np,
-            A_eq=A_eq,
-            b_eq=b_eq_np,
-            bounds=bounds_seq,
-            method=method,
-            options=options,
-        )
-        if not res.success:
-            raise RuntimeError(f"Interior-point solver failed: {res.message}")
-
-        x = torch.from_numpy(res.x).to(c.dtype).to(c.device)
-        ctx.save_for_backward(c, b_eq, h_ub)
-        ctx.solver_meta = {
-            "status": res.status,
-            "message": res.message,
-            "iterations": getattr(res, "nit", None),
-        }
+        c: torch.Tensor,
+        A_eq: torch.Tensor,
+        b_eq: torch.Tensor,
+        G: torch.Tensor,
+        h: torch.Tensor,
+        lb: torch.Tensor,
+        ub: torch.Tensor,
+        params: Optional[IPParams] = None,
+    ) -> torch.Tensor:
+        x_np = solve_lp_highs_debug(c, A_eq, b_eq, G, h, lb, ub)
+        x = torch.from_numpy(x_np).to(c)
+        ctx.save_for_backward(h)
         return x
 
     @staticmethod
-    def backward(ctx, grad_output: Tensor) -> Tuple[Optional[Tensor], ...]:  # type: ignore[override]
-        c, b_eq, h_ub = ctx.saved_tensors
-        zeros_like = torch.zeros_like
-        grad_c = zeros_like(c)
-        grad_b = zeros_like(b_eq)
-        grad_h = zeros_like(h_ub)
-        return grad_c, grad_b, grad_h, None, None, None, None
+    def backward(ctx, grad_output: torch.Tensor) -> Tuple[Optional[torch.Tensor], ...]:  # type: ignore[override]
+        (h_saved,) = ctx.saved_tensors
+        grad_h = torch.zeros_like(h_saved)
+        return (None, None, None, None, grad_h, None, None, None)
 
 
 def gate_ip_solve(
-    c: Tensor,
-    b_eq: Tensor,
-    h_ub: Tensor,
-    A_eq: Optional[sparse.csr_matrix],
-    G_ub: Optional[sparse.csr_matrix],
-    bounds: Tuple[np.ndarray, np.ndarray],
-    solver_options: Optional[Dict[str, Any]] = None,
-) -> Tensor:
-    """Convenience wrapper around GateIPFunction.apply."""
+    c: torch.Tensor,
+    A_eq: Optional[torch.Tensor],
+    b_eq: Optional[torch.Tensor],
+    G: Optional[torch.Tensor],
+    h: Optional[torch.Tensor],
+    bounds: Optional[Tuple[torch.Tensor, torch.Tensor]] = None,
+    params: Optional[IPParams] = None,
+) -> torch.Tensor:
+    """Unified interface for LP solving inside torch graphs."""
 
-    return GateIPFunction.apply(c, b_eq, h_ub, A_eq, G_ub, bounds, solver_options)
+    n = c.shape[0]
+    device = c.device
+    dtype = c.dtype
+
+    A_eq_tensor = _tensor_or_empty(A_eq, n, c)
+    b_eq_tensor = _vector_or_empty(b_eq, c)
+    G_tensor = _tensor_or_empty(G, n, c)
+    h_tensor = _vector_or_empty(h, c)
+
+    if bounds is None:
+        lb = torch.zeros(n, dtype=dtype, device=device)
+        ub = torch.full((n,), float("inf"), dtype=dtype, device=device)
+    else:
+        lb, ub = bounds
+    return GateIPFunction.apply(c, A_eq_tensor, b_eq_tensor, G_tensor, h_tensor, lb, ub, params)
+
+
+__all__ = [
+    "IPParams",
+    "GateIPFunction",
+    "gate_ip_solve",
+    "solve_lp_highs_debug",
+]

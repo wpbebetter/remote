@@ -4,10 +4,16 @@
 - [ ] 在 ip_layer.backward 中补全对 c/h 等参数的梯度（KKT 求导）
 - [ ] 将两阶段 LP 松弛接口接入后续神经网络训练流程
 - [ ] 根据权威翼展或机型分级数据进一步细化 compat_matrix 规则
-- [ ] 在 GateIPFunction.backward 中实现对 h 的梯度，移除 numpy regret detour
+- [ ] 在 GateIPFunction.backward 中实现对 h 的真实梯度，移除 numpy regret detour
+- [ ] 在 model_relaxed.py 中新增 torch 版 Stage1/Stage2 relaxed 接口
+- [ ] 修改 train_relaxed.py，让 regret 完全在 torch 计算图中构建
 
 ## In Progress
 - [ ] *（无）*
+
+## Done
+- [x] 固定 ip_layer.py 的公共接口并确保 backward 形状正确
+- [x] 新建 debug_ip_layer.py 验证 forward/backward
 
 ## Done
 - [x] 在 GateAssignmentInstance 中补充计划落地时间等特征，构造训练特征矩阵
