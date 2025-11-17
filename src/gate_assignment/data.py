@@ -60,6 +60,8 @@ class GateAssignmentInstance:
 
     taxi_cost_matrix: np.ndarray
     compat_matrix: np.ndarray
+    arrival_sched_min: np.ndarray
+    features: np.ndarray
 
 
 _RUNWAY_COLUMN_MAP = {
@@ -95,6 +97,17 @@ def _infer_aircraft_class(model_code: str) -> str:
         return "E"
     # 默认视为窄体机，匹配 C 类机位
     return "C"
+
+
+def _aircraft_class_id(model_code: str) -> int:
+    return _CLASS_ORDER[_infer_aircraft_class(model_code)]
+
+
+def _encode_runway_series(runway_series: pd.Series) -> np.ndarray:
+    cleaned = runway_series.fillna("").astype(str).str.strip().str.upper()
+    unique_codes = sorted(code for code in cleaned.unique() if code)
+    mapping = {code: idx for idx, code in enumerate(unique_codes)}
+    return cleaned.map(mapping).fillna(-1).to_numpy(dtype=np.int64)
 
 
 def build_compat_matrix(flights_day: pd.DataFrame, stands: pd.DataFrame) -> np.ndarray:
@@ -302,12 +315,34 @@ def build_daily_instances(min_flights_per_day: int = 1) -> List[GateAssignmentIn
         for i, runway_code in enumerate(runway_codes):
             column = _runway_column_for(runway_code)
             taxi_cost_matrix[i, :] = taxi_column_cache[column]
+
         flights_day = (
             df_day.drop(columns=["date_only"])
             .reset_index(drop=True)
             .assign(arrival_true_min=arrival_minutes, runway_code=runway_codes)
         )
         compat_matrix = build_compat_matrix(flights_day, stands_df)
+
+        sched_dt = pd.to_datetime(flights_day["计划落地时间"], errors="coerce")
+        arrival_sched_min = (
+            (sched_dt - day_start).dt.total_seconds() / 60.0
+        ).to_numpy(dtype=np.float64)
+        is_international = (
+            flights_day["进港属性"].fillna("") == "国际"
+        ).to_numpy(dtype=np.float64)
+        aircraft_class_ids = np.array(
+            [_aircraft_class_id(code) for code in flights_day["机型"].fillna("")],
+            dtype=np.float64,
+        )
+        runway_encoded = _encode_runway_series(flights_day["runway_str"])
+        runway_encoded = runway_encoded.astype(np.float64)
+        sched_norm = arrival_sched_min / (24 * 60.0)
+        aircraft_norm = aircraft_class_ids / max(_CLASS_ORDER.values())
+        runway_div = np.max(runway_encoded[runway_encoded >= 0]) if np.any(runway_encoded >= 0) else 1.0
+        runway_norm = np.where(runway_encoded >= 0, runway_encoded / runway_div, 0.0)
+        features = np.stack(
+            [sched_norm, is_international, aircraft_norm, runway_norm], axis=1
+        ).astype(np.float64)
         instance = GateAssignmentInstance(
             date=pd.Timestamp(date_key).normalize(),
             flights=flights_day,
@@ -319,6 +354,8 @@ def build_daily_instances(min_flights_per_day: int = 1) -> List[GateAssignmentIn
             runway_codes=runway_codes,
             taxi_cost_matrix=taxi_cost_matrix,
             compat_matrix=compat_matrix,
+            arrival_sched_min=arrival_sched_min,
+            features=features,
         )
         instances.append(instance)
 

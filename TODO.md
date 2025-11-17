@@ -4,11 +4,16 @@
 - [ ] 在 ip_layer.backward 中补全对 c/h 等参数的梯度（KKT 求导）
 - [ ] 将两阶段 LP 松弛接口接入后续神经网络训练流程
 - [ ] 根据权威翼展或机型分级数据进一步细化 compat_matrix 规则
+- [ ] 在 GateIPFunction.backward 中实现对 h 的梯度，移除 numpy regret detour
 
 ## In Progress
 - [ ] *（无）*
 
 ## Done
+- [x] 在 GateAssignmentInstance 中补充计划落地时间等特征，构造训练特征矩阵
+- [x] 新建 ArrivalPredictor（PyTorch）并接入训练
+- [x] 实现 GateAssignmentDataset，将实例打包为 Dataset
+- [x] 编写 train_relaxed.py：Two-Stage relaxed + MSE 训练骨架
 - [x] 编写 debug_relaxed_two_stage.py，对比整数两阶段与 relaxed 两阶段
 - [x] 封装两阶段 LP 松弛求解接口（Stage1/Stage2）
 - [x] 在 model_relaxed.py 中实现 Stage2 LP 松弛矩阵构造（含 |x - x1| 惩罚）
