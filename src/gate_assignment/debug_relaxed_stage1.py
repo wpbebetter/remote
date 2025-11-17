@@ -8,8 +8,11 @@ import numpy as np
 import torch
 
 from .data import GateAssignmentInstance, build_daily_instances
-from .ip_layer import gate_ip_solve
-from .model_relaxed import build_stage1_lp_matrices, solve_stage1_lp_gurobi
+from .model_relaxed import (
+    build_stage1_lp_matrices,
+    solve_stage1_lp_gurobi,
+    solve_stage1_relaxed_torch,
+)
 
 
 def _trim_instance(inst: GateAssignmentInstance, max_flights: int) -> GateAssignmentInstance:
@@ -28,6 +31,8 @@ def _trim_instance(inst: GateAssignmentInstance, max_flights: int) -> GateAssign
         runway_codes=inst.runway_codes[idx],
         taxi_cost_matrix=inst.taxi_cost_matrix[idx, :],
         compat_matrix=inst.compat_matrix[idx, :],
+        arrival_sched_min=inst.arrival_sched_min[idx],
+        features=inst.features[idx, :],
     )
 
 
@@ -39,15 +44,15 @@ def _select_instance(instances: list[GateAssignmentInstance], max_flights: int) 
 
 
 def main() -> None:
-    instances = build_daily_instances(min_flights_per_day=40)
+    instances = build_daily_instances(min_flights_per_day=20)
     if not instances:
         print("未能构造任何日实例。")
         return
 
-    inst = _select_instance(instances, max_flights=60)
+    inst = _select_instance(instances, max_flights=25)
     arrival = inst.arrival_true_min
 
-    matrices = build_stage1_lp_matrices(inst, arrival)
+    matrices = build_stage1_lp_matrices(inst)
     print(
         f"测试日期: {inst.date.date()}, 航班数: {len(inst.flight_ids)}, "
         f"机位数: {len(inst.stand_ids)}"
@@ -57,23 +62,12 @@ def main() -> None:
         f"不等式: {matrices.meta['num_ineq']}, 潜在冲突对: {matrices.meta['num_pairs']}"
     )
 
-    c_tensor = torch.from_numpy(matrices.c).double()
-    b_tensor = torch.from_numpy(matrices.b_eq).double()
-    h_tensor = torch.from_numpy(matrices.h_ub).double()
-
     start_ip = time.time()
-    x_relaxed = gate_ip_solve(
-        c_tensor,
-        b_tensor,
-        h_tensor,
-        matrices.A_eq,
-        matrices.G_ub,
-        matrices.bounds,
-        solver_options={"options": {"tol": 1e-9}},
-    )
+    arrival_tensor = torch.from_numpy(arrival).double()
+    x_relaxed = solve_stage1_relaxed_torch(inst, arrival_tensor)
     ip_time = time.time() - start_ip
     x_relaxed_np = x_relaxed.detach().cpu().numpy()
-    obj_ip = float(np.dot(matrices.c, x_relaxed_np))
+    obj_ip = float((inst.taxi_cost_matrix * x_relaxed_np.reshape(inst.taxi_cost_matrix.shape)).sum())
 
     start_grb = time.time()
     x_lp_gurobi, obj_gurobi = solve_stage1_lp_gurobi(inst, arrival, time_limit=60.0)

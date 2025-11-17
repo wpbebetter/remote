@@ -2,11 +2,9 @@
 
 ## Backlog
 - [ ] 在 ip_layer.backward 中补全对 c/h 等参数的梯度（KKT 求导）
-- [ ] 将两阶段 LP 松弛接口接入后续神经网络训练流程
 - [ ] 根据权威翼展或机型分级数据进一步细化 compat_matrix 规则
-- [ ] 在 GateIPFunction.backward 中实现对 h 的真实梯度，移除 numpy regret detour
-- [ ] 在 model_relaxed.py 中新增 torch 版 Stage1/Stage2 relaxed 接口
-- [ ] 修改 train_relaxed.py，让 regret 完全在 torch 计算图中构建
+- [ ] 在更大规模实例上压测 GateIPFunction（数值稳定性与 runtime）
+- [ ] 将 relaxed 训练效果在整数 Two-Stage MILP 上验证（对比仅 MSE 的基线）
 
 ## In Progress
 - [ ] *（无）*
@@ -14,6 +12,13 @@
 ## Done
 - [x] 固定 ip_layer.py 的公共接口并确保 backward 形状正确
 - [x] 新建 debug_ip_layer.py 验证 forward/backward
+- [x] 阅读 NSP IPOfunc.backward，弄清 KKT 梯度如何映射到 h
+- [x] 在 ip_layer.py 中实现内点 forward + KKT backward（仅对 h）
+- [x] 编写 debug_ip_grad.py，使用有限差分验证 GateIPFunction 对 h 的梯度
+- [x] 调整 LP 结构，使到达时间只出现在约束 RHS h
+- [x] 在 model_relaxed.py 中新增基于 gate_ip_solve 的 torch 版 Stage1/Stage2 relaxed 接口
+- [x] 修改 train_relaxed.py，让 regret 完全在 torch 计算图中构建
+- [x] 在小规模实例上验证训练循环（loss/MSE/regret 正常且可反传）
 
 ## Done
 - [x] 在 GateAssignmentInstance 中补充计划落地时间等特征，构造训练特征矩阵
