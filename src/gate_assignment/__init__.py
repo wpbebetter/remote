@@ -1,0 +1,2 @@
+"""Gate assignment package initialization."""
+
