@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import List, Sequence
+from typing import List, Sequence, Tuple
 
 import numpy as np
 import torch
@@ -50,17 +50,77 @@ class GateAssignmentDataset(Dataset):
         }
 
 
-def build_default_dataset(
+def build_dataset_splits(
     min_flights_per_day: int = 20,
     max_flights_per_day: int = 40,
-    precompute_oracle: bool = True,
-) -> GateAssignmentDataset:
+    max_instances: int = 30,
+    train_ratio: float = 0.6,
+    val_ratio: float = 0.2,
+    seed: int = 0,
+) -> Tuple[
+    List[GateAssignmentInstance],
+    List[GateAssignmentInstance],
+    List[GateAssignmentInstance],
+]:
+    """Construct GateAssignmentInstance list and split into train/val/test."""
+
     instances = build_daily_instances(min_flights_per_day=min_flights_per_day)
     filtered = [inst for inst in instances if len(inst.flight_ids) <= max_flights_per_day]
-    return GateAssignmentDataset(filtered, precompute_oracle=precompute_oracle)
+    if max_instances is not None and len(filtered) > max_instances:
+        filtered = filtered[:max_instances]
+
+    n = len(filtered)
+    if n == 0:
+        return [], [], []
+
+    rng = np.random.default_rng(seed)
+    indices = np.arange(n)
+    rng.shuffle(indices)
+
+    n_train = max(1, int(n * train_ratio)) if n >= 1 else 0
+    n_val = max(0, int(n * val_ratio))
+    if n_train + n_val >= n:
+        n_val = max(0, n - n_train)
+    n_test = n - n_train - n_val
+
+    train_idx = indices[:n_train]
+    val_idx = indices[n_train:n_train + n_val]
+    test_idx = indices[n_train + n_val:]
+
+    train_list = [filtered[i] for i in train_idx]
+    val_list = [filtered[i] for i in val_idx]
+    test_list = [filtered[i] for i in test_idx]
+    return train_list, val_list, test_list
+
+
+def make_dataset_from_instances(
+    instances: List[GateAssignmentInstance],
+    precompute_oracle: bool = True,
+) -> GateAssignmentDataset:
+    return GateAssignmentDataset(instances, precompute_oracle=precompute_oracle)
+
+
+def build_default_datasets(
+    min_flights_per_day: int = 20,
+    max_flights_per_day: int = 40,
+    max_instances: int = 30,
+    seed: int | None = 0,
+) -> Tuple[GateAssignmentDataset, GateAssignmentDataset, GateAssignmentDataset]:
+    train_list, val_list, test_list = build_dataset_splits(
+        min_flights_per_day=min_flights_per_day,
+        max_flights_per_day=max_flights_per_day,
+        max_instances=max_instances,
+        seed=0 if seed is None else seed,
+    )
+    train_ds = GateAssignmentDataset(train_list, precompute_oracle=True)
+    val_ds = GateAssignmentDataset(val_list, precompute_oracle=True)
+    test_ds = GateAssignmentDataset(test_list, precompute_oracle=True)
+    return train_ds, val_ds, test_ds
 
 
 __all__ = [
     "GateAssignmentDataset",
-    "build_default_dataset",
+    "build_dataset_splits",
+    "build_default_datasets",
+    "make_dataset_from_instances",
 ]

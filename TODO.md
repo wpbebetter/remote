@@ -3,8 +3,8 @@
 ## Backlog
 - [ ] 在 ip_layer.backward 中补全对 c/h 等参数的梯度（KKT 求导）
 - [ ] 根据权威翼展或机型分级数据进一步细化 compat_matrix 规则
-- [ ] 在更大规模实例上压测 GateIPFunction（数值稳定性与 runtime）
-- [ ] 将 relaxed 训练效果在整数 Two-Stage MILP 上验证（对比仅 MSE 的基线）
+- [ ] 在更大规模实例（更多天+航班）上压测 GateIPFunction 与训练 runtime
+- [ ] 系统性对比 mse_only / regret_only / combined 在整数 MILP 上的表现（多随机划分）
 
 ## In Progress
 - [ ] *（无）*
@@ -19,6 +19,10 @@
 - [x] 在 model_relaxed.py 中新增基于 gate_ip_solve 的 torch 版 Stage1/Stage2 relaxed 接口
 - [x] 修改 train_relaxed.py，让 regret 完全在 torch 计算图中构建
 - [x] 在小规模实例上验证训练循环（loss/MSE/regret 正常且可反传）
+- [x] 实现数据集划分（train/val/test），按日期/实例划分
+- [x] 扩展 train_relaxed.py 支持不同 loss 配置并保存 checkpoint
+- [x] 新建整数评估脚本，使用整数 Two-Stage MILP 在 test 集上评估模型
+- [x] 跑通一次小规模实验，对比至少两种 loss 配置下的整数 regret 指标
 
 ## Done
 - [x] 在 GateAssignmentInstance 中补充计划落地时间等特征，构造训练特征矩阵
