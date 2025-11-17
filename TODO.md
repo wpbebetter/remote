@@ -1,12 +1,18 @@
 # TODO
 
 ## Backlog
+- [ ] 在 ip_layer.backward 中补全对 c/h 等参数的梯度（KKT 求导）
+- [ ] 实现 Stage2 LP 松弛矩阵与 GateIPLayer 调用
 - [ ] 根据权威翼展或机型分级数据进一步细化 compat_matrix 规则
 
 ## In Progress
 - [ ] *（无）*
 
 ## Done
+- [x] 编写 debug_relaxed_stage1.py，对比 Gurobi LP 与内点解
+- [x] 设计并实现 GateAssignment Stage1 LP 松弛的矩阵构造函数
+- [x] 在 src/gate_assignment/ 下复制并精简可微 IP 层，实现 ip_layer.py
+- [x] 阅读 reference/code/NSP/ip_model_whole.py，理解 IPOfunc 接口与矩阵格式
 - [x] 根据机型/翼展等规则完善 compat_matrix 构造逻辑
 - [x] 优化时间冲突建模，仅为潜在冲突的机位-航班组合创建排序变量
 - [x] 编写 debug_two_stage.py，运行两阶段流程并计算 post-hoc regret
