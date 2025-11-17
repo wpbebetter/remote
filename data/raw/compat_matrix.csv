@@ -1,0 +1,2398 @@
+aircraft_type,aircraft_class,stand_id,pier,contact_remote,stand_icao_code,allow_hard,allow_soft,penalty_tier,reason,special_tag,stand_attribute
+333,unknown,301,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,302,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,303,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,304,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,305,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,306,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,307,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,308,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,309,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,310,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,311,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,312,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,313,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,314,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,315,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,316,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,317,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,318,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,319,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,320,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,321,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,322,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,323,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,324,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,325,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,326,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,327,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,328,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,329,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,330,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,331,T3C,contact,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,332,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,333,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,334,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,351,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,352,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,353,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,354,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,355,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,356,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,357,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,358,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,359,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,360,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,361,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,371,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,372,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,373,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,381,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,382,T3C,remote,C,0,1,medium,Unknown type: conservative allow on C/D,,domestic
+333,unknown,401,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,402,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,403,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,404,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,405,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,406,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,407,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,408,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,409,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,410,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,411,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,412,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,413,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,451,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,452,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,453,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,454,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,455,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,456,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,457,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,458,T3D,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,459,T3D,remote,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,460,T3D,remote,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,461,T3D,remote,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,462,T3D,remote,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,463,T3D,remote,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,464,T3D,remote,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,465,T3D,remote,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,466,T3D,remote,E,0,0,forbid,Unknown type on E/F not allowed by default,,domestic
+333,unknown,501,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,502,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,503,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,504,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,505,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,506,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,507,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,508,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,509,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,510,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,511,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,512,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,513,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,514,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,515,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,516,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,517,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,518,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,519,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,520,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,521,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,522,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,523,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,524,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,525,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,526,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,527,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,528,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,529,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,530,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,531,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,532,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,533,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,534,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,535,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,536,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,international
+333,unknown,537,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,538,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,539,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,540,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,541,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,542,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,543,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,544,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,545,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,546,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,547,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,548,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,549,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,550,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,551,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,552,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,553,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,554,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,555,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,556,T3E,contact,E,0,0,forbid,Unknown type on E/F not allowed by default,,mixed
+333,unknown,560,T3E,remote,F,0,0,forbid,Unknown type on E/F not allowed by default,A380/B747-8 capable,international
+333,unknown,561,T3E,remote,F,0,0,forbid,Unknown type on E/F not allowed by default,A380/B747-8 capable,international
+333,unknown,562,T3E,remote,F,0,0,forbid,Unknown type on E/F not allowed by default,A380/B747-8 capable,international
+333,unknown,563,T3E,remote,F,0,0,forbid,Unknown type on E/F not allowed by default,A380/B747-8 capable,international
+333,unknown,564,T3E,remote,F,0,0,forbid,Unknown type on E/F not allowed by default,A380/B747-8 capable,international
+333,unknown,565,T3E,remote,F,0,0,forbid,Unknown type on E/F not allowed by default,A380/B747-8 capable,international
+A20N,narrow,301,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,302,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,303,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,304,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,305,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,306,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,307,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,308,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,309,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,310,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,311,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,312,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,313,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,314,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,315,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,316,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,317,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,318,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,319,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,320,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,321,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,322,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,323,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,324,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,325,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,326,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,327,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,328,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,329,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,330,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,331,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,332,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,333,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,334,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,351,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,352,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,353,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,354,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,355,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,356,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,357,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,358,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,359,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,360,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,361,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,371,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,372,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,373,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,381,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,382,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A20N,narrow,401,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,402,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,403,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,404,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,405,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,406,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,407,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,408,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,409,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,410,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,411,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,412,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,413,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,451,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,452,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,453,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,454,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,455,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,456,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,457,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,458,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,459,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,460,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,461,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,462,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,463,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,464,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,465,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,466,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A20N,narrow,501,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,502,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,503,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,504,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,505,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,506,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,507,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,508,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,509,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,510,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,511,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,512,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,513,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,514,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,515,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,516,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,517,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,518,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,519,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,520,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,521,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,522,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,523,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,524,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,525,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,526,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,527,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,528,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,529,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,530,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,531,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,532,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,533,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,534,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,535,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,536,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A20N,narrow,537,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,538,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,539,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,540,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,541,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,542,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,543,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,544,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,545,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,546,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,547,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,548,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,549,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,550,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,551,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,552,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,553,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,554,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,555,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,556,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A20N,narrow,560,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A20N,narrow,561,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A20N,narrow,562,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A20N,narrow,563,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A20N,narrow,564,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A20N,narrow,565,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A21N,narrow,301,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,302,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,303,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,304,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,305,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,306,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,307,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,308,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,309,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,310,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,311,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,312,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,313,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,314,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,315,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,316,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,317,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,318,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,319,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,320,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,321,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,322,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,323,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,324,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,325,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,326,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,327,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,328,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,329,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,330,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,331,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,332,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,333,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,334,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,351,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,352,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,353,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,354,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,355,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,356,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,357,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,358,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,359,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,360,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,361,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,371,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,372,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,373,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,381,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,382,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A21N,narrow,401,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,402,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,403,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,404,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,405,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,406,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,407,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,408,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,409,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,410,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,411,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,412,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,413,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,451,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,452,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,453,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,454,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,455,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,456,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,457,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,458,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,459,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,460,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,461,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,462,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,463,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,464,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,465,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,466,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A21N,narrow,501,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,502,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,503,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,504,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,505,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,506,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,507,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,508,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,509,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,510,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,511,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,512,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,513,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,514,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,515,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,516,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,517,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,518,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,519,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,520,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,521,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,522,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,523,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,524,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,525,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,526,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,527,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,528,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,529,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,530,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,531,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,532,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,533,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,534,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,535,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,536,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A21N,narrow,537,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,538,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,539,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,540,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,541,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,542,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,543,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,544,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,545,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,546,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,547,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,548,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,549,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,550,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,551,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,552,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,553,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,554,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,555,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,556,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A21N,narrow,560,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A21N,narrow,561,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A21N,narrow,562,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A21N,narrow,563,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A21N,narrow,564,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A21N,narrow,565,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A319,narrow,301,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,302,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,303,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,304,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,305,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,306,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,307,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,308,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,309,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,310,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,311,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,312,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,313,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,314,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,315,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,316,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,317,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,318,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,319,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,320,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,321,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,322,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,323,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,324,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,325,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,326,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,327,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,328,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,329,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,330,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,331,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,332,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,333,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,334,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,351,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,352,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,353,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,354,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,355,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,356,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,357,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,358,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,359,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,360,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,361,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,371,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,372,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,373,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,381,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,382,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A319,narrow,401,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,402,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,403,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,404,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,405,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,406,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,407,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,408,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,409,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,410,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,411,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,412,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,413,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,451,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,452,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,453,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,454,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,455,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,456,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,457,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,458,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,459,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,460,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,461,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,462,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,463,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,464,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,465,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,466,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A319,narrow,501,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,502,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,503,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,504,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,505,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,506,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,507,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,508,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,509,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,510,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,511,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,512,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,513,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,514,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,515,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,516,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,517,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,518,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,519,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,520,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,521,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,522,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,523,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,524,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,525,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,526,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,527,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,528,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,529,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,530,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,531,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,532,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,533,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,534,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,535,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,536,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A319,narrow,537,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,538,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,539,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,540,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,541,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,542,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,543,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,544,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,545,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,546,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,547,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,548,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,549,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,550,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,551,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,552,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,553,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,554,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,555,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,556,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A319,narrow,560,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A319,narrow,561,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A319,narrow,562,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A319,narrow,563,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A319,narrow,564,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A319,narrow,565,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A320,narrow,301,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,302,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,303,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,304,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,305,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,306,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,307,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,308,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,309,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,310,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,311,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,312,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,313,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,314,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,315,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,316,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,317,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,318,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,319,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,320,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,321,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,322,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,323,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,324,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,325,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,326,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,327,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,328,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,329,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,330,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,331,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,332,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,333,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,334,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,351,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,352,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,353,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,354,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,355,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,356,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,357,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,358,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,359,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,360,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,361,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,371,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,372,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,373,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,381,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,382,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A320,narrow,401,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,402,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,403,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,404,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,405,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,406,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,407,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,408,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,409,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,410,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,411,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,412,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,413,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,451,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,452,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,453,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,454,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,455,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,456,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,457,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,458,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,459,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,460,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,461,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,462,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,463,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,464,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,465,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,466,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A320,narrow,501,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,502,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,503,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,504,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,505,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,506,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,507,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,508,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,509,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,510,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,511,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,512,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,513,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,514,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,515,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,516,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,517,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,518,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,519,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,520,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,521,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,522,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,523,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,524,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,525,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,526,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,527,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,528,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,529,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,530,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,531,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,532,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,533,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,534,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,535,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,536,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A320,narrow,537,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,538,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,539,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,540,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,541,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,542,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,543,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,544,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,545,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,546,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,547,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,548,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,549,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,550,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,551,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,552,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,553,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,554,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,555,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,556,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A320,narrow,560,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A320,narrow,561,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A320,narrow,562,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A320,narrow,563,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A320,narrow,564,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A320,narrow,565,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A321,narrow,301,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,302,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,303,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,304,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,305,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,306,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,307,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,308,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,309,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,310,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,311,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,312,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,313,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,314,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,315,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,316,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,317,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,318,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,319,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,320,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,321,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,322,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,323,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,324,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,325,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,326,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,327,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,328,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,329,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,330,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,331,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,332,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,333,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,334,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,351,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,352,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,353,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,354,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,355,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,356,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,357,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,358,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,359,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,360,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,361,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,371,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,372,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,373,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,381,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,382,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+A321,narrow,401,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,402,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,403,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,404,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,405,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,406,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,407,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,408,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,409,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,410,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,411,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,412,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,413,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,451,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,452,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,453,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,454,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,455,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,456,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,457,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,458,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,459,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,460,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,461,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,462,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,463,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,464,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,465,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,466,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+A321,narrow,501,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,502,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,503,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,504,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,505,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,506,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,507,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,508,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,509,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,510,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,511,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,512,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,513,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,514,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,515,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,516,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,517,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,518,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,519,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,520,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,521,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,522,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,523,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,524,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,525,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,526,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,527,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,528,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,529,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,530,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,531,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,532,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,533,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,534,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,535,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,536,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+A321,narrow,537,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,538,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,539,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,540,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,541,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,542,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,543,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,544,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,545,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,546,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,547,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,548,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,549,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,550,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,551,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,552,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,553,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,554,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,555,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,556,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+A321,narrow,560,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A321,narrow,561,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A321,narrow,562,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A321,narrow,563,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A321,narrow,564,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A321,narrow,565,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+A332,wide,301,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,302,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,303,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,304,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,305,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,306,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,307,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,308,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,309,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,310,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,311,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,312,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,313,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,314,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,315,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,316,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,317,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,318,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,319,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,320,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,321,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,322,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,323,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,324,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,325,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,326,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,327,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,328,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,329,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,330,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,331,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,332,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,333,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,334,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,351,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,352,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,353,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,354,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,355,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,356,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,357,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,358,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,359,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,360,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,361,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,371,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,372,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,373,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,381,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,382,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A332,wide,401,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,402,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,403,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,404,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,405,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,406,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,407,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,408,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,409,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,410,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,411,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,412,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,413,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,451,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,452,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,453,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,454,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,455,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,456,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,457,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,458,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,459,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,460,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,461,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,462,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,463,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,464,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,465,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,466,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A332,wide,501,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,502,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,503,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,504,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,505,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,506,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,507,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,508,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,509,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,510,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,511,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,512,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,513,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,514,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,515,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,516,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,517,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,518,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,519,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,520,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,521,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,522,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,523,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,524,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,525,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,526,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,527,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,528,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,529,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,530,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,531,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,532,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,533,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,534,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,535,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,536,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A332,wide,537,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,538,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,539,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,540,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,541,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,542,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,543,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,544,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,545,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,546,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,547,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,548,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,549,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,550,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,551,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,552,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,553,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,554,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,555,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,556,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A332,wide,560,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A332,wide,561,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A332,wide,562,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A332,wide,563,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A332,wide,564,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A332,wide,565,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A333,wide,301,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,302,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,303,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,304,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,305,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,306,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,307,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,308,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,309,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,310,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,311,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,312,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,313,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,314,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,315,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,316,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,317,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,318,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,319,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,320,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,321,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,322,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,323,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,324,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,325,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,326,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,327,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,328,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,329,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,330,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,331,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,332,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,333,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,334,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,351,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,352,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,353,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,354,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,355,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,356,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,357,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,358,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,359,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,360,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,361,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,371,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,372,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,373,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,381,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,382,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A333,wide,401,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,402,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,403,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,404,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,405,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,406,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,407,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,408,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,409,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,410,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,411,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,412,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,413,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,451,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,452,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,453,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,454,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,455,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,456,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,457,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,458,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,459,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,460,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,461,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,462,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,463,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,464,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,465,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,466,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A333,wide,501,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,502,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,503,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,504,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,505,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,506,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,507,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,508,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,509,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,510,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,511,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,512,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,513,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,514,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,515,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,516,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,517,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,518,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,519,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,520,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,521,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,522,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,523,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,524,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,525,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,526,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,527,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,528,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,529,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,530,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,531,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,532,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,533,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,534,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,535,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,536,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A333,wide,537,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,538,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,539,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,540,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,541,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,542,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,543,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,544,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,545,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,546,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,547,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,548,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,549,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,550,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,551,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,552,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,553,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,554,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,555,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,556,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A333,wide,560,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A333,wide,561,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A333,wide,562,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A333,wide,563,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A333,wide,564,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A333,wide,565,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A359,wide,301,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,302,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,303,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,304,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,305,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,306,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,307,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,308,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,309,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,310,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,311,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,312,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,313,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,314,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,315,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,316,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,317,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,318,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,319,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,320,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,321,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,322,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,323,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,324,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,325,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,326,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,327,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,328,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,329,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,330,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,331,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,332,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,333,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,334,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,351,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,352,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,353,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,354,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,355,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,356,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,357,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,358,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,359,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,360,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,361,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,371,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,372,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,373,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,381,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,382,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+A359,wide,401,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,402,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,403,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,404,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,405,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,406,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,407,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,408,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,409,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,410,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,411,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,412,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,413,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,451,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,452,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,453,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,454,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,455,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,456,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,457,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,458,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,459,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,460,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,461,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,462,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,463,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,464,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,465,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,466,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+A359,wide,501,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,502,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,503,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,504,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,505,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,506,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,507,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,508,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,509,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,510,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,511,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,512,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,513,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,514,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,515,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,516,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,517,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,518,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,519,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,520,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,521,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,522,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,523,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,524,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,525,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,526,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,527,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,528,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,529,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,530,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,531,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,532,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,533,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,534,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,535,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,536,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+A359,wide,537,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,538,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,539,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,540,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,541,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,542,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,543,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,544,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,545,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,546,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,547,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,548,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,549,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,550,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,551,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,552,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,553,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,554,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,555,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,556,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+A359,wide,560,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A359,wide,561,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A359,wide,562,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A359,wide,563,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A359,wide,564,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+A359,wide,565,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B38M,narrow,301,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,302,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,303,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,304,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,305,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,306,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,307,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,308,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,309,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,310,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,311,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,312,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,313,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,314,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,315,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,316,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,317,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,318,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,319,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,320,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,321,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,322,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,323,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,324,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,325,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,326,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,327,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,328,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,329,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,330,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,331,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,332,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,333,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,334,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,351,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,352,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,353,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,354,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,355,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,356,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,357,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,358,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,359,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,360,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,361,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,371,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,372,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,373,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,381,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,382,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B38M,narrow,401,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,402,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,403,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,404,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,405,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,406,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,407,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,408,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,409,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,410,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,411,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,412,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,413,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,451,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,452,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,453,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,454,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,455,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,456,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,457,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,458,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,459,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,460,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,461,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,462,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,463,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,464,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,465,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,466,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B38M,narrow,501,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,502,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,503,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,504,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,505,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,506,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,507,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,508,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,509,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,510,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,511,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,512,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,513,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,514,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,515,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,516,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,517,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,518,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,519,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,520,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,521,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,522,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,523,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,524,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,525,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,526,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,527,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,528,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,529,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,530,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,531,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,532,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,533,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,534,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,535,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,536,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B38M,narrow,537,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,538,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,539,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,540,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,541,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,542,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,543,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,544,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,545,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,546,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,547,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,548,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,549,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,550,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,551,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,552,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,553,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,554,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,555,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,556,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B38M,narrow,560,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B38M,narrow,561,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B38M,narrow,562,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B38M,narrow,563,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B38M,narrow,564,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B38M,narrow,565,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B737,narrow,301,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,302,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,303,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,304,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,305,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,306,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,307,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,308,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,309,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,310,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,311,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,312,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,313,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,314,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,315,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,316,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,317,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,318,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,319,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,320,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,321,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,322,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,323,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,324,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,325,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,326,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,327,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,328,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,329,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,330,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,331,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,332,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,333,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,334,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,351,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,352,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,353,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,354,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,355,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,356,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,357,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,358,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,359,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,360,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,361,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,371,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,372,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,373,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,381,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,382,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B737,narrow,401,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,402,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,403,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,404,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,405,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,406,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,407,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,408,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,409,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,410,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,411,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,412,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,413,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,451,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,452,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,453,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,454,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,455,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,456,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,457,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,458,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,459,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,460,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,461,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,462,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,463,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,464,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,465,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,466,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B737,narrow,501,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,502,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,503,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,504,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,505,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,506,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,507,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,508,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,509,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,510,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,511,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,512,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,513,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,514,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,515,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,516,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,517,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,518,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,519,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,520,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,521,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,522,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,523,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,524,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,525,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,526,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,527,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,528,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,529,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,530,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,531,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,532,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,533,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,534,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,535,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,536,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B737,narrow,537,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,538,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,539,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,540,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,541,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,542,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,543,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,544,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,545,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,546,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,547,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,548,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,549,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,550,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,551,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,552,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,553,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,554,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,555,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,556,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B737,narrow,560,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B737,narrow,561,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B737,narrow,562,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B737,narrow,563,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B737,narrow,564,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B737,narrow,565,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B738,narrow,301,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,302,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,303,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,304,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,305,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,306,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,307,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,308,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,309,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,310,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,311,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,312,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,313,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,314,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,315,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,316,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,317,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,318,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,319,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,320,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,321,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,322,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,323,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,324,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,325,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,326,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,327,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,328,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,329,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,330,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,331,T3C,contact,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,332,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,333,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,334,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,351,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,352,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,353,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,354,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,355,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,356,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,357,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,358,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,359,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,360,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,361,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,371,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,372,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,373,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,381,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,382,T3C,remote,C,1,0,none,Narrow on C stand,,domestic
+B738,narrow,401,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,402,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,403,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,404,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,405,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,406,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,407,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,408,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,409,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,410,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,411,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,412,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,413,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,451,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,452,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,453,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,454,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,455,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,456,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,457,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,458,T3D,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,459,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,460,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,461,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,462,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,463,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,464,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,465,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,466,T3D,remote,E,0,1,medium,Narrow on E/F stand (observed in data),,domestic
+B738,narrow,501,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,502,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,503,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,504,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,505,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,506,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,507,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,508,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,509,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,510,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,511,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,512,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,513,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,514,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,515,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,516,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,517,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,518,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,519,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,520,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,521,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,522,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,523,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,524,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,525,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,526,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,527,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,528,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,529,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,530,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,531,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,532,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,533,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,534,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,535,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,536,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,international
+B738,narrow,537,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,538,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,539,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,540,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,541,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,542,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,543,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,544,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,545,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,546,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,547,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,548,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,549,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,550,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,551,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,552,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,553,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,554,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,555,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,556,T3E,contact,E,0,1,medium,Narrow on E/F stand (observed in data),,mixed
+B738,narrow,560,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B738,narrow,561,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B738,narrow,562,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B738,narrow,563,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B738,narrow,564,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B738,narrow,565,T3E,remote,F,0,1,medium,Narrow on E/F stand (observed in data),A380/B747-8 capable,international
+B744,wide,301,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,302,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,303,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,304,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,305,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,306,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,307,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,308,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,309,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,310,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,311,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,312,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,313,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,314,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,315,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,316,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,317,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,318,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,319,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,320,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,321,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,322,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,323,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,324,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,325,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,326,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,327,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,328,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,329,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,330,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,331,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,332,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,333,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,334,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,351,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,352,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,353,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,354,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,355,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,356,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,357,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,358,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,359,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,360,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,361,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,371,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,372,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,373,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,381,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,382,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B744,wide,401,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,402,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,403,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,404,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,405,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,406,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,407,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,408,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,409,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,410,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,411,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,412,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,413,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,451,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,452,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,453,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,454,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,455,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,456,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,457,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,458,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,459,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,460,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,461,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,462,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,463,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,464,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,465,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,466,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B744,wide,501,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,502,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,503,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,504,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,505,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,506,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,507,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,508,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,509,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,510,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,511,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,512,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,513,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,514,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,515,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,516,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,517,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,518,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,519,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,520,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,521,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,522,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,523,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,524,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,525,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,526,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,527,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,528,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,529,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,530,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,531,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,532,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,533,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,534,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,535,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,536,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B744,wide,537,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,538,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,539,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,540,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,541,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,542,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,543,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,544,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,545,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,546,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,547,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,548,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,549,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,550,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,551,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,552,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,553,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,554,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,555,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,556,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B744,wide,560,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B744,wide,561,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B744,wide,562,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B744,wide,563,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B744,wide,564,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B744,wide,565,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B748,ultra,301,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,302,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,303,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,304,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,305,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,306,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,307,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,308,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,309,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,310,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,311,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,312,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,313,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,314,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,315,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,316,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,317,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,318,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,319,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,320,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,321,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,322,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,323,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,324,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,325,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,326,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,327,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,328,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,329,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,330,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,331,T3C,contact,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,332,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,333,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,334,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,351,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,352,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,353,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,354,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,355,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,356,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,357,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,358,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,359,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,360,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,361,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,371,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,372,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,373,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,381,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,382,T3C,remote,C,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,401,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,402,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,403,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,404,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,405,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,406,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,407,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,408,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,409,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,410,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,411,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,412,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,413,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,451,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,452,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,453,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,454,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,455,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,456,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,457,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,458,T3D,contact,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,459,T3D,remote,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,460,T3D,remote,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,461,T3D,remote,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,462,T3D,remote,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,463,T3D,remote,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,464,T3D,remote,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,465,T3D,remote,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,466,T3D,remote,E,0,0,forbid,Ultra requires F-stand,,domestic
+B748,ultra,501,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,502,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,503,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,504,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,505,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,506,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,507,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,508,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,509,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,510,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,511,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,512,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,513,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,514,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,515,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,516,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,517,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,518,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,519,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,520,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,521,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,522,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,523,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,524,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,525,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,526,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,527,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,528,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,529,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,530,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,531,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,532,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,533,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,534,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,535,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,536,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,international
+B748,ultra,537,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,538,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,539,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,540,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,541,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,542,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,543,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,544,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,545,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,546,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,547,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,548,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,549,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,550,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,551,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,552,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,553,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,554,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,555,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,556,T3E,contact,E,0,0,forbid,Ultra requires F-stand,,mixed
+B748,ultra,560,T3E,remote,F,1,0,none,Ultra on F stand,A380/B747-8 capable,international
+B748,ultra,561,T3E,remote,F,1,0,none,Ultra on F stand,A380/B747-8 capable,international
+B748,ultra,562,T3E,remote,F,1,0,none,Ultra on F stand,A380/B747-8 capable,international
+B748,ultra,563,T3E,remote,F,1,0,none,Ultra on F stand,A380/B747-8 capable,international
+B748,ultra,564,T3E,remote,F,1,0,none,Ultra on F stand,A380/B747-8 capable,international
+B748,ultra,565,T3E,remote,F,1,0,none,Ultra on F stand,A380/B747-8 capable,international
+B77W,wide,301,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,302,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,303,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,304,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,305,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,306,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,307,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,308,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,309,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,310,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,311,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,312,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,313,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,314,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,315,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,316,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,317,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,318,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,319,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,320,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,321,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,322,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,323,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,324,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,325,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,326,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,327,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,328,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,329,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,330,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,331,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,332,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,333,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,334,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,351,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,352,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,353,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,354,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,355,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,356,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,357,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,358,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,359,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,360,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,361,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,371,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,372,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,373,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,381,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,382,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B77W,wide,401,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,402,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,403,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,404,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,405,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,406,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,407,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,408,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,409,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,410,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,411,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,412,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,413,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,451,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,452,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,453,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,454,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,455,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,456,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,457,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,458,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,459,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,460,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,461,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,462,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,463,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,464,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,465,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,466,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B77W,wide,501,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,502,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,503,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,504,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,505,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,506,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,507,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,508,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,509,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,510,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,511,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,512,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,513,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,514,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,515,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,516,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,517,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,518,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,519,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,520,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,521,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,522,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,523,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,524,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,525,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,526,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,527,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,528,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,529,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,530,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,531,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,532,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,533,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,534,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,535,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,536,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B77W,wide,537,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,538,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,539,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,540,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,541,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,542,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,543,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,544,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,545,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,546,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,547,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,548,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,549,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,550,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,551,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,552,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,553,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,554,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,555,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,556,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B77W,wide,560,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B77W,wide,561,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B77W,wide,562,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B77W,wide,563,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B77W,wide,564,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B77W,wide,565,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B788,wide,301,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,302,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,303,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,304,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,305,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,306,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,307,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,308,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,309,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,310,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,311,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,312,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,313,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,314,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,315,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,316,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,317,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,318,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,319,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,320,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,321,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,322,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,323,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,324,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,325,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,326,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,327,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,328,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,329,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,330,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,331,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,332,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,333,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,334,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,351,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,352,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,353,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,354,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,355,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,356,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,357,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,358,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,359,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,360,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,361,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,371,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,372,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,373,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,381,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,382,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B788,wide,401,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,402,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,403,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,404,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,405,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,406,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,407,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,408,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,409,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,410,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,411,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,412,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,413,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,451,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,452,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,453,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,454,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,455,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,456,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,457,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,458,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,459,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,460,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,461,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,462,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,463,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,464,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,465,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,466,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B788,wide,501,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,502,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,503,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,504,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,505,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,506,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,507,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,508,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,509,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,510,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,511,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,512,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,513,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,514,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,515,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,516,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,517,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,518,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,519,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,520,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,521,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,522,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,523,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,524,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,525,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,526,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,527,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,528,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,529,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,530,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,531,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,532,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,533,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,534,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,535,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,536,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B788,wide,537,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,538,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,539,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,540,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,541,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,542,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,543,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,544,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,545,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,546,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,547,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,548,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,549,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,550,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,551,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,552,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,553,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,554,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,555,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,556,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B788,wide,560,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B788,wide,561,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B788,wide,562,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B788,wide,563,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B788,wide,564,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B788,wide,565,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B789,wide,301,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,302,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,303,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,304,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,305,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,306,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,307,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,308,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,309,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,310,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,311,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,312,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,313,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,314,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,315,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,316,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,317,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,318,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,319,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,320,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,321,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,322,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,323,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,324,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,325,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,326,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,327,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,328,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,329,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,330,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,331,T3C,contact,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,332,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,333,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,334,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,351,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,352,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,353,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,354,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,355,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,356,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,357,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,358,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,359,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,360,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,361,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,371,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,372,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,373,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,381,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,382,T3C,remote,C,0,1,high,Wide on C stand (historically rare/risky),,domestic
+B789,wide,401,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,402,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,403,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,404,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,405,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,406,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,407,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,408,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,409,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,410,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,411,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,412,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,413,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,451,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,452,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,453,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,454,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,455,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,456,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,457,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,458,T3D,contact,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,459,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,460,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,461,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,462,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,463,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,464,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,465,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,466,T3D,remote,E,1,0,none,Wide on E/F stand,,domestic
+B789,wide,501,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,502,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,503,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,504,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,505,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,506,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,507,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,508,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,509,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,510,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,511,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,512,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,513,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,514,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,515,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,516,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,517,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,518,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,519,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,520,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,521,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,522,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,523,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,524,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,525,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,526,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,527,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,528,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,529,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,530,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,531,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,532,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,533,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,534,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,535,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,536,T3E,contact,E,1,0,none,Wide on E/F stand,,international
+B789,wide,537,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,538,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,539,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,540,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,541,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,542,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,543,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,544,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,545,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,546,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,547,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,548,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,549,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,550,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,551,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,552,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,553,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,554,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,555,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,556,T3E,contact,E,1,0,none,Wide on E/F stand,,mixed
+B789,wide,560,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B789,wide,561,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B789,wide,562,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B789,wide,563,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B789,wide,564,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
+B789,wide,565,T3E,remote,F,1,0,none,Wide on E/F stand,A380/B747-8 capable,international
