@@ -17,8 +17,8 @@ def main() -> None:
     print("航班数:", len(inst.flight_ids), "机位数:", len(inst.stand_ids))
     print("taxi_cost_matrix shape:", inst.taxi_cost_matrix.shape)
     print("compat_matrix shape:", inst.compat_matrix.shape)
+    print("compat_matrix mean (可行比例):", float(inst.compat_matrix.mean()))
 
 
 if __name__ == "__main__":
     main()
-

@@ -20,6 +20,15 @@ _TAXI_FILE = "PEK_stand_runway_directional_taxi_distances.csv"
 _STANDS_FILE = "T3CDE_stands_clean.csv"
 _CANDIDATE_FLIGHTS_FILE = "t3cde_candidate_flights_final_v2.backup.csv"
 
+_ALLOWED_PIERS = {"T3C", "T3D", "T3E"}
+_PIER_RULES = {
+    "国际": {"T3E"},
+    "国内": {"T3C", "T3D"},
+}
+_CLASS_ORDER = {"C": 1, "D": 2, "E": 3, "F": 4}
+_ULTRA_WIDEBODY = {"A388", "A380", "B748"}
+_HEAVY_PREFIXES = ("A33", "A34", "A35", "A30", "B77", "B78", "B74", "B76")
+
 
 @dataclass
 class GateAssignmentInstance:
@@ -73,6 +82,66 @@ def _runway_column_for(code: str) -> str:
     if column is None:
         raise KeyError(f"未能识别跑道标识: {code!r}")
     return column
+
+
+def _infer_aircraft_class(model_code: str) -> str:
+    """根据机型字符串粗略推断 ICAO 尺寸等级。"""
+    code = str(model_code).upper()
+    if not code:
+        return "C"
+    if code in _ULTRA_WIDEBODY:
+        return "F"
+    if any(code.startswith(prefix) for prefix in _HEAVY_PREFIXES):
+        return "E"
+    # 默认视为窄体机，匹配 C 类机位
+    return "C"
+
+
+def build_compat_matrix(flights_day: pd.DataFrame, stands: pd.DataFrame) -> np.ndarray:
+    """
+    根据航班与机位属性构造可行性矩阵。
+
+    当前规则（可逐步细化）：
+        1. 机位 pier 仅允许 T3C/T3D/T3E，且按“国内→T3C/T3D”“国际→T3E”分区；
+        2. 基于机型字符串粗略推断 ICAO 等级，并要求 stand.icao_code 等级不低于航班需求；
+        3. 其余情况默认允许，TODO: 引入机型→翼展映射、contact/remote 偏好等更细规则。
+    """
+
+    flights_count = len(flights_day)
+    stands_count = len(stands)
+    compat = np.zeros((flights_count, stands_count), dtype=np.int8)
+    if flights_count == 0 or stands_count == 0:
+        return compat
+
+    flight_attrs = flights_day["进港属性"].fillna("").str.strip()
+    flight_allowed_piers = [
+        _PIER_RULES.get(attr, _ALLOWED_PIERS) for attr in flight_attrs
+    ]
+    flight_class_levels = np.array(
+        [_CLASS_ORDER[_infer_aircraft_class(code)] for code in flights_day["机型"].fillna("")],
+        dtype=int,
+    )
+
+    stand_piers = stands["pier"].fillna("").str.upper()
+    stand_valid = stand_piers.isin(_ALLOWED_PIERS)
+    stand_class_levels = np.array(
+        [_CLASS_ORDER.get(code, 1) for code in stands["icao_code"].fillna("").str.upper()],
+        dtype=int,
+    )
+
+    for i in range(flights_count):
+        allowed_piers = flight_allowed_piers[i]
+        required_level = flight_class_levels[i]
+        for j in range(stands_count):
+            if not stand_valid.iloc[j]:
+                continue
+            if stand_piers.iloc[j] not in allowed_piers:
+                continue
+            if stand_class_levels[j] < required_level:
+                continue
+            compat[i, j] = 1
+
+    return compat
 
 
 def _load_csv(filename: str, expected_columns: Iterable[str], encoding: str | None = None) -> pd.DataFrame:
@@ -233,14 +302,12 @@ def build_daily_instances(min_flights_per_day: int = 1) -> List[GateAssignmentIn
         for i, runway_code in enumerate(runway_codes):
             column = _runway_column_for(runway_code)
             taxi_cost_matrix[i, :] = taxi_column_cache[column]
-        compat_matrix = np.ones((n_flights, n_stands), dtype=np.int8)
-        # TODO: 根据机型、翼展、区域规则生成真实的兼容矩阵
-
         flights_day = (
             df_day.drop(columns=["date_only"])
             .reset_index(drop=True)
             .assign(arrival_true_min=arrival_minutes, runway_code=runway_codes)
         )
+        compat_matrix = build_compat_matrix(flights_day, stands_df)
         instance = GateAssignmentInstance(
             date=pd.Timestamp(date_key).normalize(),
             flights=flights_day,
@@ -265,5 +332,6 @@ __all__ = [
     "load_stands",
     "load_candidate_flights",
     "GateAssignmentInstance",
+    "build_compat_matrix",
     "build_daily_instances",
 ]

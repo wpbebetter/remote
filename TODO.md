@@ -1,13 +1,18 @@
 # TODO
 
 ## Backlog
-- [ ] 根据机型/翼展等规则完善 compat_matrix 构造逻辑
-- [ ] 优化时间冲突建模，仅为潜在冲突的机位-航班组合创建排序变量
+- [ ] 根据权威翼展或机型分级数据进一步细化 compat_matrix 规则
 
 ## In Progress
 - [ ] *（无）*
 
 ## Done
+- [x] 根据机型/翼展等规则完善 compat_matrix 构造逻辑
+- [x] 优化时间冲突建模，仅为潜在冲突的机位-航班组合创建排序变量
+- [x] 编写 debug_two_stage.py，运行两阶段流程并计算 post-hoc regret
+- [x] 实现 Stage2 MILP：使用真实到达时间 + 对 x 与 Stage1 解差异的惩罚 |x - x1|
+- [x] 实现 Stage1 MILP：使用预测到达时间求解，目标仅为总滑行距离
+- [x] 在 model_mip.py 中拆分/扩展接口，支持“给定任意到达时间向量”的通用 MILP 构造
 - [x] 在 src/gate_assignment/debug_mip.py 中写一个小脚本，选取一天数据运行 MILP 并打印结果
 - [x] 创建 src/gate_assignment/model_mip.py 并实现单阶段机位分配 MILP（仅使用真实到达时间）
 - [x] 在 data.py 中实现从三份 CSV 构造每日 GateAssignmentInstance 的函数
