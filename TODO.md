@@ -2,13 +2,16 @@
 
 ## Backlog
 - [ ] 在 ip_layer.backward 中补全对 c/h 等参数的梯度（KKT 求导）
-- [ ] 实现 Stage2 LP 松弛矩阵与 GateIPLayer 调用
+- [ ] 将两阶段 LP 松弛接口接入后续神经网络训练流程
 - [ ] 根据权威翼展或机型分级数据进一步细化 compat_matrix 规则
 
 ## In Progress
 - [ ] *（无）*
 
 ## Done
+- [x] 编写 debug_relaxed_two_stage.py，对比整数两阶段与 relaxed 两阶段
+- [x] 封装两阶段 LP 松弛求解接口（Stage1/Stage2）
+- [x] 在 model_relaxed.py 中实现 Stage2 LP 松弛矩阵构造（含 |x - x1| 惩罚）
 - [x] 编写 debug_relaxed_stage1.py，对比 Gurobi LP 与内点解
 - [x] 设计并实现 GateAssignment Stage1 LP 松弛的矩阵构造函数
 - [x] 在 src/gate_assignment/ 下复制并精简可微 IP 层，实现 ip_layer.py

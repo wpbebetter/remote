@@ -44,8 +44,8 @@ class GateIPFunction(Function):
         bounds: Tuple[np.ndarray, np.ndarray],
         solver_options: Optional[Dict[str, Any]] = None,
     ) -> Tensor:
-        method = "interior-point"
-        options = {"tol": 1e-9}
+        method = "highs"
+        options: Dict[str, Any] = {}
         if solver_options:
             method = solver_options.get("method", method)
             options.update(solver_options.get("options", {}))
@@ -99,4 +99,3 @@ def gate_ip_solve(
     """Convenience wrapper around GateIPFunction.apply."""
 
     return GateIPFunction.apply(c, b_eq, h_ub, A_eq, G_ub, bounds, solver_options)
-

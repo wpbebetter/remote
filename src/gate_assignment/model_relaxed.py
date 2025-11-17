@@ -11,6 +11,7 @@ from gurobipy import GRB
 from scipy import sparse
 
 from .data import GateAssignmentInstance
+from .ip_layer import gate_ip_solve
 from .model_mip import find_potential_conflict_pairs
 
 
@@ -27,8 +28,27 @@ class Stage1LPMatrices:
     meta: Dict[str, int]
 
 
+@dataclass
+class Stage2LPMatrices:
+    c: np.ndarray
+    A_eq: sparse.csr_matrix
+    b_eq: np.ndarray
+    G_ub: sparse.csr_matrix
+    h_ub: np.ndarray
+    bounds: Tuple[np.ndarray, np.ndarray]
+    meta: Dict[str, int]
+    n_x: int
+    n_delta: int
+
+
 def _flatten_index(flight_idx: int, stand_idx: int, num_stands: int) -> int:
     return flight_idx * num_stands + stand_idx
+
+
+def _tensor(array: np.ndarray) -> "torch.Tensor":
+    import torch
+
+    return torch.from_numpy(array).double()
 
 
 def build_stage1_lp_matrices(
@@ -107,6 +127,109 @@ def build_stage1_lp_matrices(
     )
 
 
+def build_stage2_lp_matrices(
+    inst: GateAssignmentInstance,
+    arrival_true_min: np.ndarray,
+    x1_reference: np.ndarray,
+    change_penalty_gamma: float = 1000.0,
+    buffer_min: float = 15.0,
+    turnaround_min: float = 60.0,
+) -> Stage2LPMatrices:
+    """
+    Stage2 LP 松弛矩阵，变量为 [x, delta]：
+        min taxi_cost^T x + gamma * 1^T delta
+        s.t.  航班唯一分配（等式）
+              时间冲突约束（同 Stage1，但基于真实到达时间）
+              x - delta <= x1_reference
+             -x - delta <= -x1_reference
+              0 <= x <= compat， 0 <= delta <= 1
+    """
+
+    flights = len(inst.flight_ids)
+    stands = len(inst.stand_ids)
+    compat = inst.compat_matrix.astype(bool)
+    n_x = flights * stands
+    n_delta = n_x
+    total_vars = n_x + n_delta
+
+    taxi_flat = inst.taxi_cost_matrix.astype(np.float64).reshape(-1)
+    c = np.concatenate([taxi_flat, np.full(n_delta, change_penalty_gamma, dtype=np.float64)])
+
+    # 等式约束 (sum_s x_{f,s} = 1)
+    eq_rows, eq_cols, eq_data = [], [], []
+    for f in range(flights):
+        for s in range(stands):
+            idx = _flatten_index(f, s, stands)
+            eq_rows.append(f)
+            eq_cols.append(idx)
+            eq_data.append(1.0)
+    A_eq = sparse.csr_matrix((eq_data, (eq_rows, eq_cols)), shape=(flights, total_vars))
+    b_eq = np.ones(flights, dtype=np.float64)
+
+    # 不等式集合
+    ineq_rows, ineq_cols, ineq_data, h_vals = [], [], [], []
+    row = 0
+
+    pairs = find_potential_conflict_pairs(arrival_true_min, turnaround_min, buffer_min)
+    for i, k in pairs:
+        for s in range(stands):
+            if compat[i, s] and compat[k, s]:
+                idx_i = _flatten_index(i, s, stands)
+                idx_k = _flatten_index(k, s, stands)
+                ineq_rows.extend([row, row])
+                ineq_cols.extend([idx_i, idx_k])
+                ineq_data.extend([1.0, 1.0])
+                h_vals.append(1.0)
+                row += 1
+
+    x1_flat = x1_reference.reshape(-1)
+    for idx in range(n_x):
+        delta_idx = n_x + idx
+        # x - delta <= x1
+        ineq_rows.extend([row, row])
+        ineq_cols.extend([idx, delta_idx])
+        ineq_data.extend([1.0, -1.0])
+        h_vals.append(x1_flat[idx])
+        row += 1
+        # -x - delta <= -x1
+        ineq_rows.extend([row, row])
+        ineq_cols.extend([idx, delta_idx])
+        ineq_data.extend([-1.0, -1.0])
+        h_vals.append(-x1_flat[idx])
+        row += 1
+
+    if h_vals:
+        G_ub = sparse.csr_matrix((ineq_data, (ineq_rows, ineq_cols)), shape=(row, total_vars))
+        h_ub = np.array(h_vals, dtype=np.float64)
+    else:
+        G_ub = sparse.csr_matrix((0, total_vars), dtype=np.float64)
+        h_ub = np.zeros(0, dtype=np.float64)
+
+    lower_bounds = np.zeros(total_vars, dtype=np.float64)
+    upper_bounds = np.concatenate(
+        [compat.reshape(-1).astype(np.float64), np.ones(n_delta, dtype=np.float64)]
+    )
+
+    meta = {
+        "num_vars": total_vars,
+        "num_eq": flights,
+        "num_ineq": int(row),
+        "num_pairs": len(pairs),
+    }
+
+    return Stage2LPMatrices(
+        c=c,
+        A_eq=A_eq,
+        b_eq=b_eq,
+        G_ub=G_ub,
+        h_ub=h_ub,
+        bounds=(lower_bounds, upper_bounds),
+        meta=meta,
+        n_x=n_x,
+        n_delta=n_delta,
+    )
+
+
 def solve_stage1_lp_gurobi(
     inst: GateAssignmentInstance,
     arrival_min: np.ndarray,
@@ -160,9 +283,58 @@ def solve_stage1_lp_gurobi(
     return solution, float(model.ObjVal)
 
 
+def solve_stage1_relaxed_ip(
+    inst: GateAssignmentInstance,
+    arrival_min: np.ndarray,
+    buffer_min: float = 15.0,
+    turnaround_min: float = 60.0,
+) -> np.ndarray:
+    """使用 GateIPFunction 求解 Stage1 LP 松弛。"""
+
+    mats = build_stage1_lp_matrices(inst, arrival_min, buffer_min, turnaround_min)
+    import torch
+
+    c_tensor = _tensor(mats.c)
+    b_tensor = _tensor(mats.b_eq)
+    h_tensor = _tensor(mats.h_ub)
+    x = gate_ip_solve(c_tensor, b_tensor, h_tensor, mats.A_eq, mats.G_ub, mats.bounds)
+    return x.detach().cpu().numpy().reshape(len(inst.flight_ids), len(inst.stand_ids))
+
+
+def solve_stage2_relaxed_ip(
+    inst: GateAssignmentInstance,
+    arrival_true_min: np.ndarray,
+    x1_reference: np.ndarray,
+    change_penalty_gamma: float = 1000.0,
+    buffer_min: float = 15.0,
+    turnaround_min: float = 60.0,
+) -> np.ndarray:
+    """使用 GateIPFunction 求解 Stage2 LP 松弛。"""
+
+    mats = build_stage2_lp_matrices(
+        inst,
+        arrival_true_min=arrival_true_min,
+        x1_reference=x1_reference,
+        change_penalty_gamma=change_penalty_gamma,
+        buffer_min=buffer_min,
+        turnaround_min=turnaround_min,
+    )
+    import torch
+
+    c_tensor = _tensor(mats.c)
+    b_tensor = _tensor(mats.b_eq)
+    h_tensor = _tensor(mats.h_ub)
+    x_delta = gate_ip_solve(c_tensor, b_tensor, h_tensor, mats.A_eq, mats.G_ub, mats.bounds)
+    x_np = x_delta.detach().cpu().numpy()[: mats.n_x]
+    return x_np.reshape(len(inst.flight_ids), len(inst.stand_ids))
+
+
 __all__ = [
     "Stage1LPMatrices",
+    "Stage2LPMatrices",
     "build_stage1_lp_matrices",
+    "build_stage2_lp_matrices",
     "solve_stage1_lp_gurobi",
+    "solve_stage1_relaxed_ip",
+    "solve_stage2_relaxed_ip",
 ]
-
