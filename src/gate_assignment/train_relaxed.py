@@ -36,7 +36,7 @@ def train(args: argparse.Namespace) -> str:
     model = ArrivalPredictor(input_dim=input_dim, hidden_dim=64).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     mse_loss_fn = nn.MSELoss()
-    ip_params = IPParams(max_iter=30, eps=1e-9)
+    ip_params = IPParams(max_iter=30, tol=1e-9)
 
     for epoch in range(1, args.epochs + 1):
         model.train()

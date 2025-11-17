@@ -44,8 +44,7 @@ def load_model(checkpoint: str, input_dim: int, device: torch.device) -> Arrival
     return model
 
 
-def main() -> None:
-    args = parse_args()
+def evaluate_checkpoint(args: argparse.Namespace) -> dict[str, float]:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     test_ds = build_test_dataset(args)
     if len(test_ds) == 0:
@@ -69,7 +68,7 @@ def main() -> None:
             arrival_pred = torch.clamp(arrival_sched + delta, 0.0, 24 * 60.0)
             arrival_pred_np = arrival_pred.cpu().numpy()
 
-        oracle_solution, obj_star = solve_single_stage(
+        _, obj_star = solve_single_stage(
             inst,
             time_limit=args.time_limit,
         )
@@ -78,7 +77,7 @@ def main() -> None:
             arrival_pred_min=arrival_pred_np,
             time_limit=args.time_limit,
         )
-        stage2_sol, obj_stage2 = solve_stage2(
+        _, obj_stage2 = solve_stage2(
             inst,
             arrival_true_min=inst.arrival_true_min,
             x1_solution=stage1_sol,
@@ -96,13 +95,23 @@ def main() -> None:
         )
 
     regrets_np = np.array(regrets)
+    metrics = {
+        "instances": len(test_ds),
+        "mean_oracle_cost": float(np.mean(oracle_costs)),
+        "mean_stage2_cost": float(np.mean(stage2_costs)),
+        "mean_int_regret": float(np.mean(regrets_np)),
+        "median_int_regret": float(np.median(regrets_np)),
+        "std_int_regret": float(np.std(regrets_np)),
+    }
     print("==== Integer evaluation summary ====")
-    print(f"Instances evaluated: {len(test_ds)}")
-    print(f"Mean oracle cost: {np.mean(oracle_costs):.2f}")
-    print(f"Mean stage2 cost: {np.mean(stage2_costs):.2f}")
-    print(f"Mean integer regret: {np.mean(regrets_np):.2f}")
-    print(f"Median integer regret: {np.median(regrets_np):.2f}")
-    print(f"Std integer regret: {np.std(regrets_np):.2f}")
+    for key, value in metrics.items():
+        print(f"{key}: {value:.2f}" if isinstance(value, float) else f"{key}: {value}")
+    return metrics
+
+
+def main() -> None:
+    args = parse_args()
+    evaluate_checkpoint(args)
 
 
 if __name__ == "__main__":
