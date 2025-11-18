@@ -12,6 +12,7 @@ import numpy as np
 import torch
 
 from .data import build_daily_instances
+from .dataset import _trim_instance_stands
 from .ip_layer import IPParams, get_last_ip_stats
 from .model_relaxed import solve_stage1_relaxed_torch, solve_stage2_relaxed_torch
 
@@ -27,13 +28,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--save_dir", type=str, default="runs")
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--noise_std", type=float, default=5.0)
+    parser.add_argument("--max_stands", type=int, default=None)
     return parser.parse_args()
 
 
 def load_instances(args: argparse.Namespace):
     instances = build_daily_instances(min_flights_per_day=args.min_flights)
     filtered = [
-        inst for inst in instances if len(inst.flight_ids) <= args.max_flights
+        _trim_instance_stands(inst, args.max_stands)
+        for inst in instances
+        if len(inst.flight_ids) <= args.max_flights
     ]
     return filtered[: args.num_instances]
 

@@ -1,0 +1,4 @@
+mode,instances,mean_int_regret,median_int_regret,std_int_regret,mean_oracle_cost,mean_stage2_cost,train_ip_calls,train_ip_warnings,train_ip_fallbacks,train_instances,ip_calls,ip_warnings,ip_fallbacks,min_flights,max_flights,max_instances,epochs,lr,gamma,lambda_regret,seed,max_stands
+mse_only,1,45.5,45.5,0.0,59756.49999999999,59801.99999999999,2,0,0,1,2,0,0,8,12,2,1,0.0005,1000.0,0.5,0,30
+regret_only,1,45.5,45.5,0.0,59756.49999999999,59801.99999999999,2,1,1,1,2,2,2,8,12,2,1,0.0005,1000.0,0.5,0,30
+combined,1,45.5,45.5,0.0,59756.49999999999,59801.99999999999,2,1,1,1,2,2,2,8,12,2,1,0.0005,1000.0,0.5,0,30

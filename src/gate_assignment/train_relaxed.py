@@ -16,16 +16,28 @@ from .model_relaxed import (
     solve_stage1_relaxed_torch,
     solve_stage2_relaxed_torch,
 )
-from .ip_layer import IPParams
+from .ip_layer import IPParams, get_last_ip_stats
 
 
-def train(args: argparse.Namespace) -> str:
+def _update_ip_counters(counters: dict[str, int]) -> None:
+    stats = get_last_ip_stats()
+    if not stats:
+        return
+    counters["calls"] += 1
+    if stats.get("warning_flag"):
+        counters["warnings"] += 1
+    if stats.get("fallback_used"):
+        counters["fallbacks"] += 1
+
+
+def train(args: argparse.Namespace) -> dict:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     train_ds, val_ds, test_ds = build_default_datasets(
         min_flights_per_day=args.min_flights,
         max_flights_per_day=args.max_flights,
         max_instances=args.max_instances,
         seed=args.seed,
+        max_stands=args.max_stands,
     )
     if len(train_ds) == 0:
         raise RuntimeError("No training instances available.")
@@ -37,6 +49,8 @@ def train(args: argparse.Namespace) -> str:
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     mse_loss_fn = nn.MSELoss()
     ip_params = IPParams(max_iter=30, tol=1e-9)
+
+    ip_counters = {"calls": 0, "warnings": 0, "fallbacks": 0}
 
     for epoch in range(1, args.epochs + 1):
         model.train()
@@ -65,6 +79,7 @@ def train(args: argparse.Namespace) -> str:
                 arrival_min_tensor=arrival_pred,
                 ip_params=ip_params,
             )
+            _update_ip_counters(ip_counters)
             x2 = solve_stage2_relaxed_torch(
                 inst,
                 arrival_true_tensor=arrival_true,
@@ -72,6 +87,7 @@ def train(args: argparse.Namespace) -> str:
                 change_penalty_gamma=args.gamma,
                 ip_params=ip_params,
             )
+            _update_ip_counters(ip_counters)
             cost_matrix = torch.from_numpy(inst.taxi_cost_matrix).to(device=device, dtype=torch.double)
             taxi_cost2 = (x2 * cost_matrix).sum()
             penalty = args.gamma * torch.abs(x2 - x1).sum()
@@ -103,6 +119,10 @@ def train(args: argparse.Namespace) -> str:
             f"mse={total_mse/n:.4f} avg_relaxed_regret={total_regret/n:.2f} "
             f"time={duration:.1f}s grad_norm(delta)={avg_grad:.3e}"
         )
+        print(
+            f"    IP stats (cumulative): calls={ip_counters['calls']}, "
+            f"warnings={ip_counters['warnings']}, fallbacks={ip_counters['fallbacks']}"
+        )
 
     os.makedirs(args.save_dir, exist_ok=True)
     ckpt_path = os.path.join(
@@ -117,7 +137,11 @@ def train(args: argparse.Namespace) -> str:
         ckpt_path,
     )
     print(f"Saved checkpoint to {ckpt_path}")
-    return ckpt_path
+    return {
+        "checkpoint": ckpt_path,
+        "ip_stats": ip_counters,
+        "train_instances": len(train_ds),
+    }
 
 
 def parse_args() -> argparse.Namespace:
@@ -137,6 +161,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max_instances", type=int, default=10)
     parser.add_argument("--save_dir", type=str, default="runs")
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--max_stands", type=int, default=None)
     return parser.parse_args()
 
 

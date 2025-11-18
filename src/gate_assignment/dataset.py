@@ -57,6 +57,7 @@ def build_dataset_splits(
     train_ratio: float = 0.6,
     val_ratio: float = 0.2,
     seed: int = 0,
+    max_stands: int | None = None,
 ) -> Tuple[
     List[GateAssignmentInstance],
     List[GateAssignmentInstance],
@@ -66,6 +67,8 @@ def build_dataset_splits(
 
     instances = build_daily_instances(min_flights_per_day=min_flights_per_day)
     filtered = [inst for inst in instances if len(inst.flight_ids) <= max_flights_per_day]
+    if max_stands is not None:
+        filtered = [_trim_instance_stands(inst, max_stands) for inst in filtered]
     if max_instances is not None and len(filtered) > max_instances:
         filtered = filtered[:max_instances]
 
@@ -79,9 +82,17 @@ def build_dataset_splits(
 
     n_train = max(1, int(n * train_ratio)) if n >= 1 else 0
     n_val = max(0, int(n * val_ratio))
-    if n_train + n_val >= n:
-        n_val = max(0, n - n_train)
+    if n_train + n_val >= n and n > 1:
+        n_val = max(0, n - n_train - 1)
+    n_train = min(n_train, max(1, n - 1)) if n > 1 else n_train
     n_test = n - n_train - n_val
+    if n_test <= 0 and n >= 1:
+        if n_val > 0:
+            n_val -= 1
+            n_test = 1
+        elif n_train > 1:
+            n_train -= 1
+            n_test = 1
 
     train_idx = indices[:n_train]
     val_idx = indices[n_train:n_train + n_val]
@@ -105,12 +116,14 @@ def build_default_datasets(
     max_flights_per_day: int = 40,
     max_instances: int = 30,
     seed: int | None = 0,
+    max_stands: int | None = None,
 ) -> Tuple[GateAssignmentDataset, GateAssignmentDataset, GateAssignmentDataset]:
     train_list, val_list, test_list = build_dataset_splits(
         min_flights_per_day=min_flights_per_day,
         max_flights_per_day=max_flights_per_day,
         max_instances=max_instances,
         seed=0 if seed is None else seed,
+        max_stands=max_stands,
     )
     train_ds = GateAssignmentDataset(train_list, precompute_oracle=True)
     val_ds = GateAssignmentDataset(val_list, precompute_oracle=True)
@@ -123,4 +136,31 @@ __all__ = [
     "build_dataset_splits",
     "build_default_datasets",
     "make_dataset_from_instances",
+    "_trim_instance_stands",
 ]
+
+
+def _trim_instance_stands(inst: GateAssignmentInstance, max_stands: int) -> GateAssignmentInstance:
+    if max_stands is None or len(inst.stand_ids) <= max_stands:
+        return inst
+    idx = np.arange(max_stands)
+    stands_subset = inst.stands.iloc[idx].reset_index(drop=True)
+    compat_trim = inst.compat_matrix[:, :max_stands].copy()
+    row_zero = compat_trim.sum(axis=1) == 0
+    if row_zero.any():
+        compat_trim[row_zero, :] = 1
+
+    return GateAssignmentInstance(
+        date=inst.date,
+        flights=inst.flights,
+        stands=stands_subset,
+        taxi_distances=inst.taxi_distances,
+        flight_ids=inst.flight_ids,
+        stand_ids=inst.stand_ids[:max_stands],
+        arrival_true_min=inst.arrival_true_min,
+        runway_codes=inst.runway_codes,
+        taxi_cost_matrix=inst.taxi_cost_matrix[:, :max_stands],
+        compat_matrix=compat_trim,
+        arrival_sched_min=inst.arrival_sched_min,
+        features=inst.features,
+    )

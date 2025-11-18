@@ -4,4 +4,4 @@
 
 - `NeurIPS_Two_Stage_Predict-Optimize-main/`：论文 *Two-Stage Predict+Optimize for Mixed Integer Linear Programs with Unknown Parameters in Constraints* 的官方代码与 PDF，仅供参考。
 
-该文件夹不会被直接调用或修改；我们的自定义代码位于仓库根目录的 `gate_assignment/` 包中。*** End Patch
+该文件夹不会被直接调用或修改；

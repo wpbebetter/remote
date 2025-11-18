@@ -1,0 +1,1 @@
+mode,instances,mean_int_regret,median_int_regret,std_int_regret,mean_oracle_cost,mean_stage2_cost,train_ip_calls,train_ip_warnings,train_ip_fallbacks,ip_calls,ip_warnings,ip_fallbacks,min_flights,max_flights,max_instances,epochs,lr,gamma,lambda_regret,seed

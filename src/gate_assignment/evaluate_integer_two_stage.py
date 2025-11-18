@@ -9,6 +9,7 @@ import numpy as np
 import torch
 
 from .dataset import build_dataset_splits, make_dataset_from_instances
+from .ip_layer import get_last_ip_stats
 from .model_mip import solve_single_stage, solve_stage1, solve_stage2
 from .net import ArrivalPredictor
 
@@ -22,6 +23,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max_instances", type=int, default=10)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--time_limit", type=float, default=60.0)
+    parser.add_argument("--max_stands", type=int, default=None)
     return parser.parse_args()
 
 
@@ -31,6 +33,7 @@ def build_test_dataset(args: argparse.Namespace):
         max_flights_per_day=args.max_flights,
         max_instances=args.max_instances,
         seed=args.seed,
+        max_stands=args.max_stands,
     )
     test_ds = make_dataset_from_instances(test_list, precompute_oracle=False)
     return test_ds
@@ -57,6 +60,7 @@ def evaluate_checkpoint(args: argparse.Namespace) -> dict[str, float]:
     regrets: List[float] = []
     stage2_costs: List[float] = []
     oracle_costs: List[float] = []
+    ip_counters = {"calls": 0, "warnings": 0, "fallbacks": 0}
 
     for idx, inst in enumerate(test_ds.instances):
         batch = test_ds[idx]
@@ -77,6 +81,7 @@ def evaluate_checkpoint(args: argparse.Namespace) -> dict[str, float]:
             arrival_pred_min=arrival_pred_np,
             time_limit=args.time_limit,
         )
+        _update_ip_counters(ip_counters)
         _, obj_stage2 = solve_stage2(
             inst,
             arrival_true_min=inst.arrival_true_min,
@@ -84,6 +89,7 @@ def evaluate_checkpoint(args: argparse.Namespace) -> dict[str, float]:
             change_penalty_gamma=args.gamma,
             time_limit=args.time_limit,
         )
+        _update_ip_counters(ip_counters)
         regret = obj_stage2 - obj_star
         regrets.append(regret)
         stage2_costs.append(obj_stage2)
@@ -102,6 +108,9 @@ def evaluate_checkpoint(args: argparse.Namespace) -> dict[str, float]:
         "mean_int_regret": float(np.mean(regrets_np)),
         "median_int_regret": float(np.median(regrets_np)),
         "std_int_regret": float(np.std(regrets_np)),
+        "ip_calls": ip_counters["calls"],
+        "ip_warnings": ip_counters["warnings"],
+        "ip_fallbacks": ip_counters["fallbacks"],
     }
     print("==== Integer evaluation summary ====")
     for key, value in metrics.items():
@@ -116,3 +125,14 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+def _update_ip_counters(counters: dict[str, int]) -> None:
+    stats = get_last_ip_stats()
+    if not stats:
+        return
+    counters["calls"] += 1
+    if stats.get("warning_flag"):
+        counters["warnings"] += 1
+    if stats.get("fallback_used"):
+        counters["fallbacks"] += 1
