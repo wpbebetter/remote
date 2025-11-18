@@ -28,6 +28,26 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def _print_arg_summary(args: argparse.Namespace) -> None:
+    print("==== 实验参数配置 ====")
+    summary_items = {
+        "modes": ",".join(args.modes),
+        "epochs": args.epochs,
+        "lr": args.lr,
+        "gamma": args.gamma,
+        "lambda_regret": args.lambda_regret,
+        "min_flights": args.min_flights,
+        "max_flights": args.max_flights,
+        "max_stands": args.max_stands,
+        "max_instances": args.max_instances,
+        "seed": args.seed,
+        "time_limit": args.time_limit,
+        "save_dir": args.save_dir,
+    }
+    for key, value in summary_items.items():
+        print(f"{key}: {value}")
+
+
 def train_one_mode(mode: str, args: argparse.Namespace) -> dict:
     train_args = argparse.Namespace(
         epochs=args.epochs,
@@ -62,6 +82,7 @@ def evaluate_checkpoint_metrics(checkpoint: str, args: argparse.Namespace) -> Di
 def main() -> None:
     args = parse_args()
     os.makedirs(args.save_dir, exist_ok=True)
+    _print_arg_summary(args)
 
     results: List[Dict[str, float]] = []
     for mode in args.modes:
@@ -100,12 +121,14 @@ def main() -> None:
             "ip_fallbacks",
             "min_flights",
             "max_flights",
+            "max_stands",
             "max_instances",
             "epochs",
             "lr",
             "gamma",
             "lambda_regret",
             "seed",
+            "time_limit",
         ]
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -114,19 +137,22 @@ def main() -> None:
                 {
                     "min_flights": args.min_flights,
                     "max_flights": args.max_flights,
+                    "max_stands": args.max_stands,
                     "max_instances": args.max_instances,
                     "epochs": args.epochs,
                     "lr": args.lr,
                     "gamma": args.gamma,
                     "lambda_regret": args.lambda_regret,
                     "seed": args.seed,
+                    "time_limit": args.time_limit,
                 }
             )
             writer.writerow(row)
     print(f"Wrote {len(results)} rows to {csv_path}")
 
     print("==== Integer Two-Stage Regret Comparison (test set) ====")
-    print(f"{'mode':<12} {'mean':>10} {'median':>10} {'std':>10} {'train_fb%':>10} {'eval_fb%':>10}")
+    header = f"{'mode':<12} {'mean_reg':>10} {'median_reg':>10} {'std_reg':>10} {'train_fb%':>10} {'eval_fb%':>10}"
+    print(header)
     for row in results:
         train_fb = (
             row["train_ip_fallbacks"] / row["train_ip_calls"] * 100.0

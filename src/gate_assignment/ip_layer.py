@@ -249,25 +249,33 @@ class GateIPFunction(Function):
         grad = grad_output.unsqueeze(0)
         clamp = ctx.params.ratio_clamp
         d = torch.clamp(ctx.lams, min=clamp) / torch.clamp(ctx.slacks, min=clamp)
-        pdipm_b.factor_kkt(ctx.S_LU, ctx.R, d)
+        try:
+            pdipm_b.factor_kkt(ctx.S_LU, ctx.R, d)
 
-        zeros_nineq = torch.zeros_like(ctx.lams)
-        if ctx.neq > 0:
-            zeros_neq = torch.zeros((1, ctx.neq), dtype=G.dtype, device=G.device)
-        else:
-            zeros_neq = torch.zeros((1, 0), dtype=G.dtype, device=G.device)
+            zeros_nineq = torch.zeros_like(ctx.lams)
+            if ctx.neq > 0:
+                zeros_neq = torch.zeros((1, ctx.neq), dtype=G.dtype, device=G.device)
+            else:
+                zeros_neq = torch.zeros((1, 0), dtype=G.dtype, device=G.device)
 
-        dx, _, dlam, _ = pdipm_b.solve_kkt(
-            ctx.Q_LU,
-            d,
-            G,
-            A,
-            ctx.S_LU,
-            grad,
-            zeros_nineq,
-            zeros_nineq,
-            zeros_neq,
-        )
+            dx, _, dlam, _ = pdipm_b.solve_kkt(
+                ctx.Q_LU,
+                d,
+                G,
+                A,
+                ctx.S_LU,
+                grad,
+                zeros_nineq,
+                zeros_nineq,
+                zeros_neq,
+            )
+        except RuntimeError as err:
+            print(
+                f"[GateIPFunction] backward KKT solve failed: {err}. "
+                "Returning zero gradients for h."
+            )
+            grad_h = torch.zeros(ctx.base_rows, dtype=h.dtype, device=h.device)
+            return (None, None, None, None, grad_h, None, None, None)
 
         grad_h_full = -dlam.squeeze(0)
         base_rows = ctx.base_rows

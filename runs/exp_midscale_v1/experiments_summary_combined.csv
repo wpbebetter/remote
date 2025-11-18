@@ -1,0 +1,2 @@
+mode,instances,mean_int_regret,median_int_regret,std_int_regret,mean_oracle_cost,mean_stage2_cost,train_ip_calls,train_ip_warnings,train_ip_fallbacks,train_instances,ip_calls,ip_warnings,ip_fallbacks,min_flights,max_flights,max_stands,max_instances,epochs,lr,gamma,lambda_regret,seed,time_limit
+combined,3,1338.2000000000007,2000.0,941.0931338962494,35684.26666666666,37022.46666666666,16,5,5,4,6,6,6,8,15,40,8,2,0.0005,1000.0,0.5,0,30.0

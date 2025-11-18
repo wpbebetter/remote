@@ -8,11 +8,20 @@
 - [ ] 将压测与实验结果记录到简单的 CSV/日志文件中，便于后续分析
 - [ ] 在更多种机场/机位配置上复现实验，观察方法泛化性
 - [ ] 系统记录不同 γ / λ_regret 组合下的 integer regret 曲线
+- [ ] 排查 midscale 可微 IP 的 Stage2 fallback 率过高问题，重点检查 big-M 与时间冲突约束的病态程度
+
+## Current Cycle
+- [ ] *（无）*
 
 ## In Progress
 - [ ] *（无）*
 
 ## Done
+- [x] 设计中等规模实验参数（航班数、机位上限、实例数、模式）
+- [x] 扩展 run_experiments_two_stage 支持 midscale 实验（独立 save_dir、CSV 不覆盖）
+- [x] 运行 midscale 实验，对比 mse_only vs combined 的整数 regret 与 fallback 比例
+- [x] 新建 real-scale 评估脚本，针对 119 机位 + 大航班数做整数 Two-Stage 评估
+- [x] 跑一组 real-scale 评估实验，保存到新的目录并撰写实验总结
 - [x] 固定 ip_layer.py 的公共接口并确保 backward 形状正确
 - [x] 新建 debug_ip_layer.py 验证 forward/backward
 - [x] 阅读 NSP IPOfunc.backward，弄清 KKT 梯度如何映射到 h
