@@ -4,12 +4,17 @@ from __future__ import annotations
 
 from typing import List, Sequence, Tuple
 
+import logging
+
 import numpy as np
 import torch
 from torch.utils.data import Dataset
 
 from .data import GateAssignmentInstance, build_daily_instances
 from .model_relaxed import solve_stage1_relaxed_ip
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 class GateAssignmentDataset(Dataset):
@@ -66,7 +71,19 @@ def build_dataset_splits(
     """Construct GateAssignmentInstance list and split into train/val/test."""
 
     instances = build_daily_instances(min_flights_per_day=min_flights_per_day)
-    filtered = [inst for inst in instances if len(inst.flight_ids) <= max_flights_per_day]
+    if max_flights_per_day is None:
+        filtered = list(instances)
+    else:
+        filtered = [inst for inst in instances if len(inst.flight_ids) <= max_flights_per_day]
+        if not filtered:
+            max_flights_available = max(len(inst.flight_ids) for inst in instances) if instances else 0
+            LOGGER.warning(
+                "No instances satisfy max_flights_per_day=%s; trimming high-flight days down to this cap (max available=%s)",
+                max_flights_per_day,
+                max_flights_available,
+            )
+            trimmed = [_trim_instance_flights(inst, max_flights_per_day) for inst in instances]
+            filtered = [inst for inst in trimmed if len(inst.flight_ids) >= min_flights_per_day]
     if max_stands is not None:
         filtered = [_trim_instance_stands(inst, max_stands) for inst in filtered]
     if max_instances is not None and len(filtered) > max_instances:
@@ -137,6 +154,7 @@ __all__ = [
     "build_default_datasets",
     "make_dataset_from_instances",
     "_trim_instance_stands",
+    "_trim_instance_flights",
 ]
 
 
@@ -163,4 +181,25 @@ def _trim_instance_stands(inst: GateAssignmentInstance, max_stands: int) -> Gate
         compat_matrix=compat_trim,
         arrival_sched_min=inst.arrival_sched_min,
         features=inst.features,
+    )
+
+
+def _trim_instance_flights(inst: GateAssignmentInstance, max_flights: int) -> GateAssignmentInstance:
+    if max_flights is None or len(inst.flight_ids) <= max_flights:
+        return inst
+    idx = np.arange(max_flights)
+    flights_subset = inst.flights.iloc[idx].reset_index(drop=True)
+    return GateAssignmentInstance(
+        date=inst.date,
+        flights=flights_subset,
+        stands=inst.stands,
+        taxi_distances=inst.taxi_distances,
+        flight_ids=inst.flight_ids[idx],
+        stand_ids=inst.stand_ids,
+        arrival_true_min=inst.arrival_true_min[idx],
+        runway_codes=inst.runway_codes[idx],
+        taxi_cost_matrix=inst.taxi_cost_matrix[idx, :],
+        compat_matrix=inst.compat_matrix[idx, :],
+        arrival_sched_min=inst.arrival_sched_min[idx],
+        features=inst.features[idx, :],
     )

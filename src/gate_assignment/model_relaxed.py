@@ -16,6 +16,10 @@ from .ip_layer import IPParams, gate_ip_solve
 from .model_mip import find_potential_conflict_pairs
 
 
+TIME_SCALING = 100.0
+COST_SCALING = 1000.0
+
+
 @dataclass
 class Stage1LPMatrices:
     """Stage1 LP matrices and metadata for dynamic RHS construction."""
@@ -30,6 +34,7 @@ class Stage1LPMatrices:
     time_rows: np.ndarray  # shape (num_time_rows, 3): [row_idx, flight_before, flight_after]
     big_m: float
     service_time: float
+    time_scaling: float
 
 
 @dataclass
@@ -48,6 +53,7 @@ class Stage2LPMatrices:
     penalty_neg_x: np.ndarray
     big_m: float
     service_time: float
+    time_scaling: float
 
 
 def _flatten_index(flight_idx: int, stand_idx: int, num_stands: int) -> int:
@@ -63,10 +69,11 @@ def _csr_to_dense_tensor(matrix: sparse.csr_matrix, device: torch.device) -> tor
 def _stage1_rhs_tensor(mats: Stage1LPMatrices, arrival_tensor: torch.Tensor) -> torch.Tensor:
     h = torch.from_numpy(mats.h_base).double().to(arrival_tensor.device)
     if mats.time_rows.size > 0:
+        arrival_scaled = arrival_tensor.to(dtype=torch.double) / mats.time_scaling
         rows = torch.from_numpy(mats.time_rows[:, 0]).long().to(arrival_tensor.device)
         before_idx = torch.from_numpy(mats.time_rows[:, 1]).long().to(arrival_tensor.device)
         after_idx = torch.from_numpy(mats.time_rows[:, 2]).long().to(arrival_tensor.device)
-        values = mats.big_m + arrival_tensor[after_idx] - arrival_tensor[before_idx] - mats.service_time
+        values = mats.big_m + arrival_scaled[after_idx] - arrival_scaled[before_idx] - mats.service_time
         h.index_copy_(0, rows, values)
     return h
 
@@ -79,10 +86,11 @@ def _stage2_rhs_tensor(
     h = torch.from_numpy(mats.h_base).double().to(arrival_tensor.device)
     flat_x = x1_tensor.reshape(-1).to(arrival_tensor.device, dtype=torch.double)
     if mats.time_rows.size > 0:
+        arrival_scaled = arrival_tensor.to(dtype=torch.double) / mats.time_scaling
         rows = torch.from_numpy(mats.time_rows[:, 0]).long().to(arrival_tensor.device)
         before_idx = torch.from_numpy(mats.time_rows[:, 1]).long().to(arrival_tensor.device)
         after_idx = torch.from_numpy(mats.time_rows[:, 2]).long().to(arrival_tensor.device)
-        values = mats.big_m + arrival_tensor[after_idx] - arrival_tensor[before_idx] - mats.service_time
+        values = mats.big_m + arrival_scaled[after_idx] - arrival_scaled[before_idx] - mats.service_time
         h.index_copy_(0, rows, values)
 
     if mats.penalty_pos_rows.size > 0:
@@ -119,6 +127,8 @@ def build_stage1_lp_matrices(
     compat = inst.compat_matrix.astype(bool)
     n_x = flights * stands
     service_time = turnaround_min + buffer_min
+    scaled_service = service_time / TIME_SCALING
+    scaled_big_m = big_m / TIME_SCALING
     reference_arrival = pair_reference_arrival if pair_reference_arrival is not None else inst.arrival_true_min
 
     potential_pairs = find_potential_conflict_pairs(reference_arrival, turnaround_min, buffer_min)
@@ -127,7 +137,7 @@ def build_stage1_lp_matrices(
     total_vars = n_x + n_y
 
     # 目标向量
-    c = inst.taxi_cost_matrix.astype(np.float64).reshape(-1)
+    c = inst.taxi_cost_matrix.astype(np.float64).reshape(-1) / COST_SCALING
     c = np.pad(c, (0, n_y), constant_values=0.0)
 
     # 每个航班的等式约束
@@ -175,7 +185,7 @@ def build_stage1_lp_matrices(
                 # time feasibility row (placeholder h)
                 ineq_rows.append(row)
                 ineq_cols.append(y_idx)
-                ineq_data.append(big_m)
+                ineq_data.append(scaled_big_m)
                 h_vals.append(0.0)
                 time_rows.append((row, a, b))
                 row += 1
@@ -224,8 +234,9 @@ def build_stage1_lp_matrices(
         bounds=(lower_bounds, upper_bounds),
         meta=meta,
         time_rows=np.array(time_rows, dtype=np.int64) if time_rows else np.zeros((0, 3), dtype=np.int64),
-        big_m=big_m,
-        service_time=service_time,
+        big_m=scaled_big_m,
+        service_time=scaled_service,
+        time_scaling=TIME_SCALING,
     )
 
 
@@ -251,6 +262,8 @@ def build_stage2_lp_matrices(
     stands = len(inst.stand_ids)
     compat = inst.compat_matrix.astype(bool)
     service_time = turnaround_min + buffer_min
+    scaled_service = service_time / TIME_SCALING
+    scaled_big_m = big_m / TIME_SCALING
     reference_arrival = pair_reference_arrival if pair_reference_arrival is not None else inst.arrival_true_min
 
     n_x = flights * stands
@@ -260,12 +273,12 @@ def build_stage2_lp_matrices(
     n_delta = n_x
     total_vars = n_x + n_y + n_delta
 
-    taxi_flat = inst.taxi_cost_matrix.astype(np.float64).reshape(-1)
+    taxi_flat = (inst.taxi_cost_matrix.astype(np.float64).reshape(-1)) / COST_SCALING
     c = np.concatenate(
         [
             taxi_flat,
             np.zeros(n_y, dtype=np.float64),
-            np.full(n_delta, change_penalty_gamma, dtype=np.float64),
+            np.full(n_delta, change_penalty_gamma / COST_SCALING, dtype=np.float64),
         ]
     )
 
@@ -321,7 +334,7 @@ def build_stage2_lp_matrices(
                 # time row placeholder
                 ineq_rows.append(row)
                 ineq_cols.append(y_idx)
-                ineq_data.append(big_m)
+                ineq_data.append(scaled_big_m)
                 h_vals.append(0.0)
                 time_rows.append((row, a, b))
                 row += 1
@@ -399,8 +412,9 @@ def build_stage2_lp_matrices(
         penalty_neg_rows=np.array(penalty_neg_rows, dtype=np.int64),
         penalty_pos_x=np.array(penalty_pos_x, dtype=np.int64),
         penalty_neg_x=np.array(penalty_neg_x, dtype=np.int64),
-        big_m=big_m,
-        service_time=service_time,
+        big_m=scaled_big_m,
+        service_time=scaled_service,
+        time_scaling=TIME_SCALING,
     )
 
 
@@ -498,11 +512,13 @@ def solve_stage1_relaxed_torch(
 ) -> torch.Tensor:
     """Torch 版 Stage1 LP 松弛求解。"""
 
+    arrival_pred_np = arrival_min_tensor.detach().cpu().numpy()
     mats = build_stage1_lp_matrices(
         inst,
         buffer_min=buffer_min,
         turnaround_min=turnaround_min,
         big_m=big_m,
+        pair_reference_arrival=arrival_pred_np,
     )
     arrival = arrival_min_tensor.to(dtype=torch.double)
     device = arrival.device

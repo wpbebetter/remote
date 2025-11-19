@@ -14,7 +14,7 @@ def compute_loss(h_vec: torch.Tensor) -> torch.Tensor:
     G = torch.eye(2, dtype=torch.double)
     lb = torch.zeros(2, dtype=torch.double)
     ub = torch.ones(2, dtype=torch.double) * 5.0
-    x = gate_ip_solve(c, A_eq, b_eq, G, h_vec, (lb, ub), IPParams(max_iter=20))
+    x = gate_ip_solve(c, A_eq, b_eq, G, h_vec, (lb, ub), IPParams())
     return (x ** 2).sum()
 
 

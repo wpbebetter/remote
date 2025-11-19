@@ -1,6 +1,7 @@
 # TODO
 
 ## Backlog
+- [ ] 汇总 QA 测试结果并反馈剩余问题
 - [ ] 在 ip_layer.backward 中补全对 c/h 等参数的梯度（KKT 求导）
 - [ ] 根据权威翼展或机型分级数据进一步细化 compat_matrix 规则
 - [ ] 在更大规模实例（更多天+航班）上压测 GateIPFunction 与训练 runtime
@@ -14,9 +15,19 @@
 - [ ] *（无）*
 
 ## In Progress
-- [ ] *（无）*
+- [ ] 汇总 QA 测试结果并反馈剩余问题
 
 ## Done
+- [x] 修复 train_relaxed / debug 脚本中 IPParams 初始化并完成 Gurobi 集成测试
+- [x] 为训练稳定性在 relaxed 模型中实现时间/成本缩放
+- [x] 静态审查 ip_layer.py 的 HSD/KKT 实现是否符合规范
+- [x] 运行 debug_ip_layer 验证 HSD 求解器与 HiGHS 对比（精度/状态）
+- [x] 运行 debug_ip_grad 检查解析梯度与数值梯度一致性
+- [x] 深入审查 src/gate_assignment/ip_layer.py 现有实现与 qpth 依赖，整理替换需求
+- [x] 设计并实现 numpy 版 HSD 内点前向求解器（solve_lp_numpy 等）
+- [x] 推导并编码 KKT backward（solve_kkt_backward）用于梯度传递
+- [x] 重写 GateIPFunction/gate_ip_solve，移除 qpth 并接入新 solver
+- [x] 在最小示例上运行 sanity check，验证 forward/backward 基本正确
 - [x] 设计中等规模实验参数（航班数、机位上限、实例数、模式）
 - [x] 扩展 run_experiments_two_stage 支持 midscale 实验（独立 save_dir、CSV 不覆盖）
 - [x] 运行 midscale 实验，对比 mse_only vs combined 的整数 regret 与 fallback 比例

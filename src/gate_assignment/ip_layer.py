@@ -1,35 +1,29 @@
-"""Differentiable LP layer for gate assignment LP relaxations."""
+"""Differentiable LP layer using Gurobi forward solve and KKT backward gradients."""
 
 from __future__ import annotations
 
-import contextlib
-import io
+import logging
 import time
 from dataclasses import dataclass
 from typing import Any, Optional, Tuple
 
+import gurobipy as gp
 import numpy as np
 import torch
+from gurobipy import GRB
 from scipy.optimize import linprog
 from torch.autograd import Function
 
-from qpth.qp import pdipm_b
-
-
+LOGGER = logging.getLogger(__name__)
 _LAST_IP_STATS: dict[str, Any] | None = None
 
 
 @dataclass
 class IPParams:
-    """Hyperparameters for the interior-point layer."""
+    """Hyperparameters controlling numerical stability for the LP layer."""
 
-    max_iter: int = 30
-    tol: float = 1e-9
-    qp_regularization: float = 1e-6
-    ratio_clamp: float = 1e-8
+    backward_damp: float = 1e-6
     verbose: int = 0
-    fallback_to_highs: bool = True
-    capture_warnings: bool = True
 
 
 def _tensor_or_empty(t: Optional[torch.Tensor], n_cols: int, like: torch.Tensor) -> torch.Tensor:
@@ -50,7 +44,7 @@ def _augment_inequalities(
     lb: torch.Tensor,
     ub: torch.Tensor,
 ) -> Tuple[torch.Tensor, torch.Tensor, int]:
-    """Combine general inequalities with bound constraints."""
+    """Combine explicit inequalities with bound constraints."""
 
     n = G.shape[1]
     device = G.device
@@ -85,34 +79,134 @@ def _augment_inequalities(
     return G_full, h_full, base_rows
 
 
-def solve_lp_highs_debug(
-    c: torch.Tensor,
-    A_eq: torch.Tensor,
-    b_eq: torch.Tensor,
-    G: torch.Tensor,
-    h: torch.Tensor,
-    lb: torch.Tensor,
-    ub: torch.Tensor,
-) -> np.ndarray:
-    """Solve LP with SciPy HiGHS for forward reference."""
+def _to_numpy(t: torch.Tensor) -> np.ndarray:
+    if t.numel() == 0:
+        return np.zeros(t.shape, dtype=np.float64)
+    return t.detach().cpu().numpy().astype(np.float64, copy=True)
 
-    bound_list = list(zip(lb.detach().cpu().numpy(), ub.detach().cpu().numpy()))
-    res = linprog(
-        c.detach().cpu().numpy(),
-        A_eq=A_eq.detach().cpu().numpy() if A_eq.numel() else None,
-        b_eq=b_eq.detach().cpu().numpy() if b_eq.numel() else None,
-        A_ub=G.detach().cpu().numpy() if G.numel() else None,
-        b_ub=h.detach().cpu().numpy() if h.numel() else None,
-        bounds=bound_list,
-        method="highs",
-    )
-    if not res.success:
-        raise RuntimeError(f"HiGHS failed: {res.message}")
-    return res.x
+
+def solve_lp_gurobi(
+    c: np.ndarray,
+    A: Optional[np.ndarray],
+    b: Optional[np.ndarray],
+    G: Optional[np.ndarray],
+    h: Optional[np.ndarray],
+    verbose: int = 0,
+) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, int]:
+    """Solve ``min c^T x`` subject to ``Ax=b`` and ``Gx<=h`` using Gurobi."""
+
+    n_x = c.shape[0]
+    n_eq = A.shape[0] if A is not None and A.size else 0
+    n_ineq = G.shape[0] if G is not None and G.size else 0
+
+    try:
+        with gp.Env(empty=True) as env:
+            env.setParam("OutputFlag", verbose)
+            env.start()
+            with gp.Model(env=env) as model:
+                x = model.addMVar(shape=n_x, lb=-GRB.INFINITY, ub=GRB.INFINITY, name="x")
+                model.setObjective(c @ x, GRB.MINIMIZE)
+
+                eq_constr = None
+                if n_eq > 0:
+                    eq_constr = model.addMConstr(A, x, "=", b)
+
+                ineq_constr = None
+                if n_ineq > 0:
+                    ineq_constr = model.addMConstr(G, x, "<=", h)
+
+                model.optimize()
+
+                status = model.Status
+                if status != GRB.OPTIMAL:
+                    LOGGER.warning("Gurobi LP solve failed with status %s", status)
+                    return (
+                        np.zeros(n_x),
+                        np.zeros(n_eq),
+                        np.zeros(n_ineq),
+                        np.zeros(n_ineq),
+                        status,
+                    )
+
+                x_val = x.X.copy()
+                y_val = eq_constr.Pi.copy() if eq_constr is not None else np.zeros(0, dtype=np.float64)
+                if ineq_constr is not None:
+                    z_raw = -ineq_constr.Pi.copy()
+                    with np.errstate(divide="ignore", invalid="ignore", over="ignore"):
+                        s_val = h - G @ x_val
+                else:
+                    z_raw = np.zeros(0, dtype=np.float64)
+                    s_val = np.zeros(0, dtype=np.float64)
+
+                z_val = np.maximum(z_raw, 1e-8)
+                s_val = np.maximum(s_val, 1e-8)
+                return x_val, y_val, z_val, s_val, status
+    except gp.GurobiError as exc:
+        LOGGER.error("Gurobi raised an exception: %s", exc)
+        return (
+            np.zeros(n_x),
+            np.zeros(n_eq),
+            np.zeros(n_ineq),
+            np.zeros(n_ineq),
+            -1,
+        )
+
+
+def solve_kkt_backward(
+    grad_output: torch.Tensor,
+    x: np.ndarray,
+    y: np.ndarray,
+    z: np.ndarray,
+    s: np.ndarray,
+    A: Optional[np.ndarray],
+    G: Optional[np.ndarray],
+    damp: float,
+) -> np.ndarray:
+    """Solve for ``grad_h`` using the KKT implicit differentiation system."""
+
+    del y
+    dtype = np.float64
+    grad_np = grad_output.detach().cpu().numpy().astype(dtype, copy=True)
+
+    if G is None or G.size == 0:
+        return np.zeros(0, dtype=dtype)
+
+    n_x = grad_np.shape[0]
+    if A is None or A.size == 0:
+        A = np.zeros((0, n_x), dtype=dtype)
+    if G is None or G.size == 0:
+        G = np.zeros((0, n_x), dtype=dtype)
+
+    n_eq = A.shape[0]
+    with np.errstate(divide="ignore", invalid="ignore", over="ignore"):
+        W = z / (s + 1e-9)
+
+    with np.errstate(divide="ignore", invalid="ignore", over="ignore"):
+        H = G.T @ (W[:, None] * G)
+    H += damp * np.eye(n_x, dtype=dtype)
+
+    if n_eq > 0:
+        top = np.concatenate([H, A.T], axis=1)
+        bottom = np.concatenate([A, np.zeros((n_eq, n_eq), dtype=dtype)], axis=1)
+        KKT = np.concatenate([top, bottom], axis=0)
+        rhs = np.concatenate([grad_np, np.zeros(n_eq, dtype=dtype)])
+    else:
+        KKT = H
+        rhs = grad_np
+
+    try:
+        sol = np.linalg.solve(KKT, rhs)
+    except np.linalg.LinAlgError:
+        sol = np.linalg.lstsq(KKT, rhs, rcond=None)[0]
+
+    v_x = sol[:n_x]
+    with np.errstate(divide="ignore", invalid="ignore", over="ignore"):
+        grad_h = W * (G @ v_x)
+    return grad_h
 
 
 class GateIPFunction(Function):
-    """Interior-point layer with analytical gradients for constraint RHS."""
+    """Custom torch Function wrapping the Gurobi solve + KKT backward."""
 
     @staticmethod
     def forward(  # type: ignore[override]
@@ -135,151 +229,81 @@ class GateIPFunction(Function):
 
         G_full, h_full, base_rows = _augment_inequalities(G, h, lb, ub)
 
-        Q = torch.eye(n, dtype=dtype, device=device).mul(params.qp_regularization).unsqueeze(0)
-        p = c.unsqueeze(0)
-        G_batch = G_full.unsqueeze(0)
-        h_batch = h_full.unsqueeze(0)
-        if A_eq.numel():
-            A_batch = A_eq.unsqueeze(0)
-            b_batch = b_eq.unsqueeze(0)
+        c_np = _to_numpy(c)
+        A_np = _to_numpy(A_eq) if A_eq.numel() else None
+        b_np = _to_numpy(b_eq) if b_eq.numel() else None
+        G_np = _to_numpy(G_full) if G_full.numel() else None
+        h_np = _to_numpy(h_full) if h_full.numel() else None
+
+        start = time.perf_counter()
+        x_np, y_np, z_np, s_np, status = solve_lp_gurobi(c_np, A_np, b_np, G_np, h_np, verbose=params.verbose)
+        elapsed = time.perf_counter() - start
+
+        fallback_used = status != GRB.OPTIMAL
+        if fallback_used:
+            if params.verbose > 0:
+                LOGGER.warning("Gurobi did not return OPTIMAL status (%s); falling back to HiGHS", status)
+            c_ref = c.detach().cpu().double()
+            A_ref = A_eq.detach().cpu().double()
+            b_ref = b_eq.detach().cpu().double()
+            G_ref = G_full.detach().cpu().double()
+            h_ref = h_full.detach().cpu().double()
+            lb_ref = lb.detach().cpu().double()
+            ub_ref = ub.detach().cpu().double()
+            x_fallback = solve_lp_highs_debug(c_ref, A_ref, b_ref, G_ref, h_ref, lb_ref, ub_ref)
+            x_tensor = torch.from_numpy(x_fallback).to(dtype=dtype, device=device)
         else:
-            A_batch = torch.zeros((1, 0, n), dtype=dtype, device=device)
-            b_batch = torch.zeros((1, 0), dtype=dtype, device=device)
-
-        ctx.base_rows = base_rows
-        ctx.total_ineq = G_full.shape[0]
-        ctx.neq = A_batch.shape[1]
-        ctx.params = params
-
-        ctx.Q_LU, ctx.S_LU, ctx.R = pdipm_b.pre_factor_kkt(Q, G_batch, A_batch)
-
-        capture_stdout = params.capture_warnings
-        warning_text = ""
-        start_time = time.perf_counter()
-        if capture_stdout:
-            buffer = io.StringIO()
-            with contextlib.redirect_stdout(buffer):
-                x_hat, ctx.nus, ctx.lams, ctx.slacks = pdipm_b.forward(
-                    Q,
-                    p,
-                    G_batch,
-                    h_batch,
-                    A_batch,
-                    b_batch,
-                    ctx.Q_LU,
-                    ctx.S_LU,
-                    ctx.R,
-                    eps=params.tol,
-                    verbose=params.verbose,
-                    maxIter=params.max_iter,
-                )
-            warning_text = buffer.getvalue()
-        else:
-            x_hat, ctx.nus, ctx.lams, ctx.slacks = pdipm_b.forward(
-                Q,
-                p,
-                G_batch,
-                h_batch,
-                A_batch,
-                b_batch,
-                ctx.Q_LU,
-                ctx.S_LU,
-                ctx.R,
-                eps=params.tol,
-                verbose=params.verbose,
-                maxIter=params.max_iter,
-            )
-        elapsed = time.perf_counter() - start_time
-        warning_flag = "qpth warning" in warning_text.lower()
-        needs_fallback = warning_flag or not torch.isfinite(x_hat).all()
-        fallback_used = False
-
-        if warning_text and params.verbose > 0:
-            print(warning_text.strip())
-
-        x_out = x_hat.squeeze(0)
-        ctx.use_qpth_backward = True
-
-        if needs_fallback and params.fallback_to_highs:
-            fallback_used = True
-            highs_solution = solve_lp_highs_debug(
-                c,
-                A_eq,
-                b_eq,
-                G_full,
-                h_full,
-                lb,
-                ub,
-            )
-            x_out = torch.from_numpy(highs_solution).to(dtype=dtype, device=device)
-            ctx.use_qpth_backward = False
+            x_tensor = torch.from_numpy(x_np).to(dtype=dtype, device=device)
 
         stats = {
             "runtime_sec": elapsed,
-            "warning_flag": warning_flag,
-            "warning_text": warning_text.strip(),
+            "status": status,
             "fallback_used": fallback_used,
+            "warning_flag": fallback_used,
             "n_var": n,
-            "n_eq": A_batch.shape[1],
+            "n_eq": A_eq.shape[0],
             "n_ineq": G_full.shape[0],
-            "max_iter": params.max_iter,
-            "tol": params.tol,
         }
         _set_last_ip_stats(stats)
 
-        ctx.save_for_backward(x_hat, Q, p, G_batch, h_batch, A_batch, b_batch)
-        return x_out
+        ctx.base_rows = base_rows
+        ctx.total_ineq = G_full.shape[0]
+        ctx.h_device = h.device
+        ctx.h_dtype = h.dtype
+        ctx.params = params
+        ctx.backward_ready = (not fallback_used) and (ctx.total_ineq > 0) and (base_rows > 0)
+        ctx.A_np = A_np
+        ctx.G_np = G_np
+        ctx.x_np = x_np
+        ctx.y_np = y_np
+        ctx.z_np = z_np
+        ctx.s_np = s_np
+
+        return x_tensor
 
     @staticmethod
     def backward(ctx, grad_output: torch.Tensor) -> Tuple[Optional[torch.Tensor], ...]:  # type: ignore[override]
-        (
-            zhats,
-            Q,
-            p,
-            G,
-            h,
-            A,
-            b,
-        ) = ctx.saved_tensors
-
-        if not getattr(ctx, "use_qpth_backward", True) or ctx.total_ineq == 0:
-            grad_h = torch.zeros(ctx.base_rows, dtype=h.dtype, device=h.device)
+        if not getattr(ctx, "backward_ready", False):
+            grad_h = torch.zeros(ctx.base_rows, dtype=ctx.h_dtype, device=ctx.h_device)
             return (None, None, None, None, grad_h, None, None, None)
 
-        grad = grad_output.unsqueeze(0)
-        clamp = ctx.params.ratio_clamp
-        d = torch.clamp(ctx.lams, min=clamp) / torch.clamp(ctx.slacks, min=clamp)
-        try:
-            pdipm_b.factor_kkt(ctx.S_LU, ctx.R, d)
-
-            zeros_nineq = torch.zeros_like(ctx.lams)
-            if ctx.neq > 0:
-                zeros_neq = torch.zeros((1, ctx.neq), dtype=G.dtype, device=G.device)
-            else:
-                zeros_neq = torch.zeros((1, 0), dtype=G.dtype, device=G.device)
-
-            dx, _, dlam, _ = pdipm_b.solve_kkt(
-                ctx.Q_LU,
-                d,
-                G,
-                A,
-                ctx.S_LU,
-                grad,
-                zeros_nineq,
-                zeros_nineq,
-                zeros_neq,
-            )
-        except RuntimeError as err:
-            print(
-                f"[GateIPFunction] backward KKT solve failed: {err}. "
-                "Returning zero gradients for h."
-            )
-            grad_h = torch.zeros(ctx.base_rows, dtype=h.dtype, device=h.device)
-            return (None, None, None, None, grad_h, None, None, None)
-
-        grad_h_full = -dlam.squeeze(0)
+        grad_h_full = solve_kkt_backward(
+            grad_output,
+            ctx.x_np,
+            ctx.y_np,
+            ctx.z_np,
+            ctx.s_np,
+            ctx.A_np,
+            ctx.G_np,
+            ctx.params.backward_damp,
+        )
+        grad_h_tensor = torch.from_numpy(grad_h_full).to(ctx.h_device, ctx.h_dtype)
         base_rows = ctx.base_rows
-        grad_h = grad_h_full[:base_rows] if base_rows > 0 else torch.zeros(0, dtype=h.dtype, device=h.device)
+        if base_rows > 0:
+            grad_h = grad_h_tensor[:base_rows]
+        else:
+            grad_h = torch.zeros(0, dtype=ctx.h_dtype, device=ctx.h_device)
+
         return (None, None, None, None, grad_h, None, None, None)
 
 
@@ -292,8 +316,6 @@ def gate_ip_solve(
     bounds: Optional[Tuple[torch.Tensor, torch.Tensor]] = None,
     params: Optional[IPParams] = None,
 ) -> torch.Tensor:
-    """Unified interface for LP solving inside torch graphs."""
-
     n = c.shape[0]
     device = c.device
     dtype = c.dtype
@@ -311,11 +333,39 @@ def gate_ip_solve(
     return GateIPFunction.apply(c, A_eq_tensor, b_eq_tensor, G_tensor, h_tensor, lb, ub, params)
 
 
+def solve_lp_highs_debug(
+    c: torch.Tensor,
+    A_eq: torch.Tensor,
+    b_eq: torch.Tensor,
+    G: torch.Tensor,
+    h: torch.Tensor,
+    lb: torch.Tensor,
+    ub: torch.Tensor,
+) -> np.ndarray:
+    """Reference solver using SciPy HiGHS for debugging scripts."""
+
+    bound_list = list(zip(lb.detach().cpu().numpy(), ub.detach().cpu().numpy()))
+    res = linprog(
+        c.detach().cpu().numpy(),
+        A_eq=A_eq.detach().cpu().numpy() if A_eq.numel() else None,
+        b_eq=b_eq.detach().cpu().numpy() if b_eq.numel() else None,
+        A_ub=G.detach().cpu().numpy() if G.numel() else None,
+        b_ub=h.detach().cpu().numpy() if h.numel() else None,
+        bounds=bound_list,
+        method="highs",
+    )
+    if not res.success:
+        raise RuntimeError(f"HiGHS failed: {res.message}")
+    return res.x
+
+
 __all__ = [
     "IPParams",
     "GateIPFunction",
     "gate_ip_solve",
+    "solve_lp_gurobi",
     "solve_lp_highs_debug",
+    "solve_kkt_backward",
     "get_last_ip_stats",
 ]
 
@@ -326,7 +376,6 @@ def _set_last_ip_stats(stats: dict[str, Any]) -> None:
 
 
 def get_last_ip_stats() -> dict[str, Any] | None:
-    """Return the most recent IP runtime stats recorded by GateIPFunction."""
     if _LAST_IP_STATS is None:
         return None
     return dict(_LAST_IP_STATS)

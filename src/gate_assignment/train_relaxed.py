@@ -48,7 +48,7 @@ def train(args: argparse.Namespace) -> dict:
     model = ArrivalPredictor(input_dim=input_dim, hidden_dim=64).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     mse_loss_fn = nn.MSELoss()
-    ip_params = IPParams(max_iter=30, tol=1e-9)
+    ip_params = IPParams()
 
     ip_counters = {"calls": 0, "warnings": 0, "fallbacks": 0}
 
@@ -69,6 +69,8 @@ def train(args: argparse.Namespace) -> dict:
             inst = train_ds.instances[idx]
 
             delta = model(features)
+            noise = torch.randn_like(delta) * 30.0
+            delta = delta + noise
             delta.retain_grad()
             arrival_pred = torch.clamp(arrival_sched + delta, 0.0, 24 * 60.0)
 
@@ -77,6 +79,7 @@ def train(args: argparse.Namespace) -> dict:
             x1 = solve_stage1_relaxed_torch(
                 inst,
                 arrival_min_tensor=arrival_pred,
+                buffer_min=30.0,
                 ip_params=ip_params,
             )
             _update_ip_counters(ip_counters)
@@ -85,6 +88,7 @@ def train(args: argparse.Namespace) -> dict:
                 arrival_true_tensor=arrival_true,
                 x1_tensor=x1,
                 change_penalty_gamma=args.gamma,
+                buffer_min=30.0,
                 ip_params=ip_params,
             )
             _update_ip_counters(ip_counters)
