@@ -311,46 +311,59 @@ def build_stage2_lp_matrices(
     def delta_index(x_idx: int) -> int:
         return n_x + n_y + x_idx
 
-    for pair_idx, (i, k) in enumerate(potential_pairs):
-        for orient, (a, b) in enumerate(((i, k), (k, i))):
-            for s in range(stands):
-                if not (compat[a, s] and compat[b, s]):
-                    continue
-                y_idx = y_index(pair_idx, orient, s)
-                x_a = _flatten_index(a, s, stands)
-                x_b = _flatten_index(b, s, stands)
-                # y <= x_a
-                ineq_rows.extend([row, row])
-                ineq_cols.extend([y_idx, x_a])
-                ineq_data.extend([1.0, -1.0])
-                h_vals.append(0.0)
-                row += 1
-                # y <= x_b
-                ineq_rows.extend([row, row])
-                ineq_cols.extend([y_idx, x_b])
-                ineq_data.extend([1.0, -1.0])
-                h_vals.append(0.0)
-                row += 1
-                # time row placeholder
-                ineq_rows.append(row)
-                ineq_cols.append(y_idx)
-                ineq_data.append(scaled_big_m)
-                h_vals.append(0.0)
-                time_rows.append((row, a, b))
-                row += 1
+    departures = reference_arrival + service_time
 
-        for s in range(stands):
-            if not (compat[i, s] and compat[k, s]):
-                continue
-            y_forward = y_index(pair_idx, 0, s)
-            y_backward = y_index(pair_idx, 1, s)
-            x_i = _flatten_index(i, s, stands)
-            x_k = _flatten_index(k, s, stands)
-            ineq_rows.extend([row, row, row, row])
-            ineq_cols.extend([x_i, x_k, y_forward, y_backward])
-            ineq_data.extend([1.0, 1.0, -1.0, -1.0])
-            h_vals.append(1.0)
-            row += 1
+    for pair_idx, (i, k) in enumerate(potential_pairs):
+        is_hard_conflict = (reference_arrival[i] < departures[k]) and (reference_arrival[k] < departures[i])
+
+        if is_hard_conflict:
+            for s in range(stands):
+                if not (compat[i, s] and compat[k, s]):
+                    continue
+                x_i = _flatten_index(i, s, stands)
+                x_k = _flatten_index(k, s, stands)
+                ineq_rows.extend([row, row])
+                ineq_cols.extend([x_i, x_k])
+                ineq_data.extend([1.0, 1.0])
+                h_vals.append(1.0)
+                row += 1
+        else:
+            for orient, (a, b) in enumerate(((i, k), (k, i))):
+                for s in range(stands):
+                    if not (compat[a, s] and compat[b, s]):
+                        continue
+                    y_idx = y_index(pair_idx, orient, s)
+                    x_a = _flatten_index(a, s, stands)
+                    x_b = _flatten_index(b, s, stands)
+                    ineq_rows.extend([row, row])
+                    ineq_cols.extend([y_idx, x_a])
+                    ineq_data.extend([1.0, -1.0])
+                    h_vals.append(0.0)
+                    row += 1
+                    ineq_rows.extend([row, row])
+                    ineq_cols.extend([y_idx, x_b])
+                    ineq_data.extend([1.0, -1.0])
+                    h_vals.append(0.0)
+                    row += 1
+                    ineq_rows.append(row)
+                    ineq_cols.append(y_idx)
+                    ineq_data.append(scaled_big_m)
+                    h_vals.append(0.0)
+                    time_rows.append((row, a, b))
+                    row += 1
+
+            for s in range(stands):
+                if not (compat[i, s] and compat[k, s]):
+                    continue
+                y_forward = y_index(pair_idx, 0, s)
+                y_backward = y_index(pair_idx, 1, s)
+                x_i = _flatten_index(i, s, stands)
+                x_k = _flatten_index(k, s, stands)
+                ineq_rows.extend([row, row, row, row])
+                ineq_cols.extend([x_i, x_k, y_forward, y_backward])
+                ineq_data.extend([1.0, 1.0, -1.0, -1.0])
+                h_vals.append(1.0)
+                row += 1
 
     for idx in range(n_x):
         delta_idx = delta_index(idx)

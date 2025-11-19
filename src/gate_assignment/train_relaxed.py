@@ -69,7 +69,7 @@ def train(args: argparse.Namespace) -> dict:
             inst = train_ds.instances[idx]
 
             delta = model(features)
-            noise = torch.randn_like(delta) * 30.0
+            noise = torch.randn_like(delta) * 120.0
             delta = delta + noise
             delta.retain_grad()
             arrival_pred = torch.clamp(arrival_sched + delta, 0.0, 24 * 60.0)
@@ -80,6 +80,7 @@ def train(args: argparse.Namespace) -> dict:
                 inst,
                 arrival_min_tensor=arrival_pred,
                 buffer_min=30.0,
+                big_m=300.0,
                 ip_params=ip_params,
             )
             _update_ip_counters(ip_counters)
@@ -89,6 +90,7 @@ def train(args: argparse.Namespace) -> dict:
                 x1_tensor=x1,
                 change_penalty_gamma=args.gamma,
                 buffer_min=30.0,
+                big_m=300.0,
                 ip_params=ip_params,
             )
             _update_ip_counters(ip_counters)

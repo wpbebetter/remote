@@ -18,6 +18,8 @@
 - [ ] 汇总 QA 测试结果并反馈剩余问题
 
 ## Done
+- [x] 在 train_relaxed 中注入强噪声与收紧 big-M，执行微型高压测试
+- [x] 在 Stage2 松弛模型中加入基于真实时间的硬冲突约束，激活 Regret 机制
 - [x] 修复 train_relaxed / debug 脚本中 IPParams 初始化并完成 Gurobi 集成测试
 - [x] 为训练稳定性在 relaxed 模型中实现时间/成本缩放
 - [x] 静态审查 ip_layer.py 的 HSD/KKT 实现是否符合规范
