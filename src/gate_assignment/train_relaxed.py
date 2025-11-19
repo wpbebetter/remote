@@ -69,8 +69,6 @@ def train(args: argparse.Namespace) -> dict:
             inst = train_ds.instances[idx]
 
             delta = model(features)
-            noise = torch.randn_like(delta) * 120.0
-            delta = delta + noise
             delta.retain_grad()
             arrival_pred = torch.clamp(arrival_sched + delta, 0.0, 24 * 60.0)
 

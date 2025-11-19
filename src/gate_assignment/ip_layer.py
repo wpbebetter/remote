@@ -104,6 +104,9 @@ def solve_lp_gurobi(
             env.setParam("OutputFlag", verbose)
             env.start()
             with gp.Model(env=env) as model:
+                model.setParam("Method", 2)
+                model.setParam("Crossover", 0)
+                model.setParam("BarConvTol", 1e-6)
                 x = model.addMVar(shape=n_x, lb=-GRB.INFINITY, ub=GRB.INFINITY, name="x")
                 model.setObjective(c @ x, GRB.MINIMIZE)
 
